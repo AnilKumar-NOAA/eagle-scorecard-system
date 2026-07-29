@@ -1,0 +1,88 @@
+# Scorecard heatmap config.
+#
+# Run:
+#   python scripts/performance_heatmap.py config/performance_heatmap.yaml
+
+metric: rmse
+input_path: sample_data/aligned_20250225_20251231
+output_path: outputs
+require_exact_time_match: true
+
+# Date selection is optional and can be set here or inside any plot below.
+# Use one or more of these filters:
+# start_date: "2025-02-25"
+# end_date: "2025-02-26"
+# years: [2025]
+# months: [2]
+
+# Variable selection is config-driven. Set enabled=false to remove a variable,
+# or edit upper-air levels per variable.
+variables_v2:
+  surface:
+    - {key: surface_pressure, label: Surface Pressure, units: hPa, enabled: true}
+    - {key: 2m_temperature, label: 2m Temperature, units: K, enabled: true}
+    - {key: 2m_specific_humidity, label: 2m Specific Humidity, units: kg/kg, enabled: true}
+    - {key: 10m_zonal_wind, label: 10m Zonal Wind, units: m/s, enabled: true}
+    - {key: 10m_meridional_wind, label: 10m Meridional Wind, units: m/s, enabled: true}
+    - {key: 10m_wind_speed, label: 10m Wind Speed, units: m/s, enabled: true}
+  upper:
+    - {key: geopotential_height, label: Geopotential Height, units: m, levels: [250, 500, 850], enabled: true}
+    - {key: zonal_wind, label: Zonal Wind, units: m/s, levels: [250, 500, 850], enabled: true}
+    - {key: meridional_wind, label: Meridional Wind, units: m/s, levels: [250, 500, 850], enabled: true}
+    - {key: wind_speed, label: Wind Speed, units: m/s, levels: [250, 500, 850], enabled: true}
+    - {key: temperature, label: Temperature, units: K, levels: [250, 500, 850], enabled: true}
+    - {key: specific_humidity, label: Specific Humidity, units: kg/kg, levels: [250, 500, 850], enabled: true}
+
+models:
+  nested_eagle_global:
+    global_patterns:
+      - "{metric}.convobs.nested-global.*_to_*.nc"
+    regional_patterns:
+      - "{metric}.convobs.nested-global.{region}.*_to_*.nc"
+  nested_eagle_lam:
+    default_pattern: "{metric}.convobs.nested-lam.*_to_*.nc"
+  gfs:
+    global_pattern: "{metric}.convobs.global.*_to_*.nc"
+    regional_pattern: "{metric}.convobs.global.{region}.*_to_*.nc"
+  aigfs:
+    global_pattern: "{metric}.convobs.global.*_to_*.nc"
+    regional_pattern: "{metric}.convobs.global.{region}.*_to_*.nc"
+  aifs:
+    global_pattern: "{metric}.convobs.global.*_to_*.nc"
+    regional_pattern: "{metric}.convobs.global.{region}.*_to_*.nc"
+  ecmwf_ifs:
+    global_pattern: "{metric}.convobs.global.*_to_*.nc"
+    regional_pattern: "{metric}.convobs.global.{region}.*_to_*.nc"
+  hrrr:
+    default_pattern: "{metric}.convobs.lam.*_to_*.nc"
+
+plots:
+  - name: nested_eagle_global_vs_gfs_regions
+    candidate_model: nested_eagle_global
+    baseline_model: gfs
+    # Per-plot overrides are supported, for example:
+    # start_date: "2025-02-25"
+    # end_date: "2025-02-26"
+    # forecast_hours: [24, 48, 72]
+    # xlabels: [D1, D2, D3]
+    # variables_v2:
+    #   surface:
+    #     - {key: 2m_temperature, label: 2m Temperature, units: K, enabled: true}
+    #   upper:
+    #     - {key: temperature, label: Temperature, units: K, levels: [500, 850], enabled: true}
+    output: heatmap_regions-global-nh-sh-conus_models-nested_eagle_global-vs-gfs_rmse_d1-d10.png
+
+  - name: nested_eagle_global_vs_aifs_regions
+    candidate_model: nested_eagle_global
+    baseline_model: aifs
+    output: heatmap_regions-global-nh-sh-conus_models-nested_eagle_global-vs-aifs_rmse_d1-d10.png
+
+  - name: nested_eagle_global_vs_aigfs_regions
+    candidate_model: nested_eagle_global
+    baseline_model: aigfs
+    output: heatmap_regions-global-nh-sh-conus_models-nested_eagle_global-vs-aigfs_rmse_d1-d10.png
+
+  - name: nested_eagle_global_vs_ecmwf_ifs_regions
+    candidate_model: nested_eagle_global
+    baseline_model: ecmwf_ifs
+    output: heatmap_regions-global-nh-sh-conus_models-nested_eagle_global-vs-ecmwf_ifs_rmse_d1-d10.png

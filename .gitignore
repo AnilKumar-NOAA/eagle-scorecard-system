@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Generated runtime artifacts
+logs/
+outputs/
+data_system/outputs/
+
+# Large local input datasets
+data/*/
+
+# Local archives and backups
+*.zip
+*.tar
+*.tar.gz
+*.bak
+*.bak_*

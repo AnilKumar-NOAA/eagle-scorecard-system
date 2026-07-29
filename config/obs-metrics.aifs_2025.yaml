@@ -1,0 +1,66 @@
+forecast_path: /scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/AIFS/AIFS_2025_zarr/aifs_2025_00z_20250225_20251231.zarr
+
+output_path: /scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/AIFS/aifs_2025_outputs
+
+log_path: /scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/AIFS/aifs_2025_logs
+
+lead_time: 240
+
+from_anemoi: false
+
+use_mpi: true
+
+model_type: global
+
+vars_of_interest:
+  - geopotential_height
+  - zonal_wind
+  - meridional_wind
+  - temperature
+  - specific_humidity
+  - surface_pressure
+  - 10m_zonal_wind
+  - 10m_meridional_wind
+  - 2m_temperature
+  - 2m_specific_humidity
+  - wind_speed
+  - 10m_wind_speed
+
+levels:
+  - 250
+  - 500
+  - 850
+
+temporal_window: 30min
+
+max_qc_value: 2
+
+subregions:
+  conus:
+    longitude: [-135, -50]
+    latitude: [20, 55]
+
+  europe:
+    longitude: [-25, 65]
+    latitude: [35, 75]
+
+  tropics:
+    latitude: [-20, 20]
+
+  northern_hemisphere:
+    latitude: [20, 80]
+
+  southern_hemisphere:
+    latitude: [-80, -20]
+
+  polar_north:
+    latitude: [60, 90]
+
+  polar_south:
+    latitude: [-90, -60]
+
+start_date: 2025-02-25T00
+
+end_date: 2025-12-31T00
+
+freq: 24h

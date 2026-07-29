@@ -1,0 +1,50 @@
+data_base: sample_data/aligned_20250225_20251231
+models:
+  nested_eagle_global:
+    label: Nested-EAGLE-Global (AI)
+    directory: nested_eagle_global_2025 
+    global_patterns:
+    - rmse.convobs.nested-global.2025-*_to_2025-*.nc
+    regional_patterns:
+    - rmse.convobs.nested-global.{region}.2025-*_to_2025-*.nc
+  nested_eagle_lam:
+    label: Nested-EAGLE-LAM (AI-HR)
+    directory: nested_eagle_lam_2025 
+    default_patterns:
+    - rmse.convobs.nested-lam.2025-*_to_2025-*.nc
+    - rmse.convobs.nested_lam.2025-*_to_2025-*.nc
+  gfs:
+    label: GFS
+    directory: gfs_2025
+    global_patterns:
+    - rmse.convobs.global.2025-*_to_2025-*.nc
+    regional_patterns:
+    - rmse.convobs.global.{region}.2025-*_to_2025-*.nc
+    - rmse.convobs.global.conus.2025-*_to_2025-*.nc
+  aigfs:
+    label: AIGFS
+    directory: aigfs_2025
+    global_patterns:
+    - rmse.convobs.global.2025-*_to_2025-*.nc
+    regional_patterns:
+    - rmse.convobs.global.{region}.2025-*_to_2025-*.nc
+  ecmwf_ifs:
+    label: ECMWF IFS
+    directory: ecmwf_ifs_2025
+    global_patterns:
+    - rmse.convobs.global.2025-*_to_2025-*.nc
+    regional_patterns:
+    - rmse.convobs.global.{region}.2025-*_to_2025-*.nc
+  aifs:
+    label: AIFS
+    directory: aifs_2025
+    global_patterns:
+    - rmse.convobs.global.2025-*_to_2025-*.nc
+    regional_patterns:
+    - rmse.convobs.global.{region}.2025-*_to_2025-*.nc
+  hrrr:
+    label: HRRR
+    directory: hrrr_2025
+    default_patterns:
+    - rmse.convobs.lam*.2025-*_to_2025-*.nc
+    - rmse.convobs.hrrr*.2025-*_to_2025-*.nc

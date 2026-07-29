@@ -1,0 +1,68 @@
+skip_pressure_levels:
+  - 100
+
+variable_aliases:
+  geopotential_height: [geopotential_height, geopotential, gh, z]
+  zonal_wind: [zonal_wind, u_wind, u_component_of_wind, u]
+  meridional_wind: [meridional_wind, v_wind, v_component_of_wind, v]
+  temperature: [temperature, tmp, t]
+  specific_humidity: [specific_humidity, q, spfh]
+  wind_speed: [wind_speed, wind]
+  surface_pressure: [surface_pressure, pressure_surface, sp, ps]
+  10m_zonal_wind: [10m_zonal_wind, u10, 10u]
+  10m_meridional_wind: [10m_meridional_wind, v10, 10v]
+  2m_temperature: [2m_temperature, t2m, 2t]
+  2m_specific_humidity: [2m_specific_humidity, q2m, 2m_q]
+  10m_wind_speed: [10m_wind_speed, wind_speed_10m, ws10]
+
+row_groups:
+  - name: geopotential_height
+    rows:
+      - {var: geopotential_height, label: geopotential_height 100, levels: [100]}
+      - {var: geopotential_height, label: geopotential_height 250, levels: [250]}
+      - {var: geopotential_height, label: geopotential_height 500, levels: [500]}
+      - {var: geopotential_height, label: geopotential_height 850, levels: [850]}
+
+  - name: zonal_wind
+    rows:
+      - {var: zonal_wind, label: zonal_wind 100, levels: [100]}
+      - {var: zonal_wind, label: zonal_wind 250, levels: [250]}
+      - {var: zonal_wind, label: zonal_wind 500, levels: [500]}
+      - {var: zonal_wind, label: zonal_wind 850, levels: [850]}
+
+  - name: meridional_wind
+    rows:
+      - {var: meridional_wind, label: meridional_wind 100, levels: [100]}
+      - {var: meridional_wind, label: meridional_wind 250, levels: [250]}
+      - {var: meridional_wind, label: meridional_wind 500, levels: [500]}
+      - {var: meridional_wind, label: meridional_wind 850, levels: [850]}
+
+  - name: temperature
+    rows:
+      - {var: temperature, label: temperature 100, levels: [100]}
+      - {var: temperature, label: temperature 250, levels: [250]}
+      - {var: temperature, label: temperature 500, levels: [500]}
+      - {var: temperature, label: temperature 850, levels: [850]}
+
+  - name: specific_humidity
+    rows:
+      - {var: specific_humidity, label: specific_humidity 100, levels: [100]}
+      - {var: specific_humidity, label: specific_humidity 250, levels: [250]}
+      - {var: specific_humidity, label: specific_humidity 500, levels: [500]}
+      - {var: specific_humidity, label: specific_humidity 850, levels: [850]}
+
+  - name: wind_speed
+    rows:
+      - {var: wind_speed, label: wind_speed 100, levels: [100]}
+      - {var: wind_speed, label: wind_speed 250, levels: [250]}
+      - {var: wind_speed, label: wind_speed 500, levels: [500]}
+      - {var: wind_speed, label: wind_speed 850, levels: [850]}
+
+  - name: surface
+    rows:
+      - {var: surface_pressure, label: surface_pressure, levels: null}
+      - {var: 10m_zonal_wind, label: 10m_zonal_wind, levels: null}
+      - {var: 10m_meridional_wind, label: 10m_meridional_wind, levels: null}
+      - {var: 2m_temperature, label: 2m_temperature, levels: null}
+      - {var: 2m_specific_humidity, label: 2m_specific_humidity, levels: null}
+      - {var: 10m_wind_speed, label: 10m_wind_speed, levels: null}

@@ -1,0 +1,14 @@
+release=scorecard_2025_netcdf_data_20260604_190311
+created_utc=2026-06-04T19:03:39Z
+source=/scratch3/NCEPDEV/global/Anil.Kumar/scorecard
+destination=/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/eagle-tools-data/scorecard_2025_netcdf_data_20260604_190311
+
+Model NetCDF counts:
+aigfs_2025           source=384 copied=384
+ecmwf_ifs_2025       source=384 copied=384
+hrrr_2025            source=48 copied=48
+nested_eagle_2025    source=384 copied=384
+gfs_zarr_2025        source=384 copied=384
+
+Total copied NetCDF files:
+1584
