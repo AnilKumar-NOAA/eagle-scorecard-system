@@ -18,5 +18,9 @@ The NetCDF values are synthetic and are only intended for smoke testing the
 scorecard scripts in a fresh checkout. They are not meteorological verification
 results.
 
+The Nested-EAGLE-LAM vs HRRR RMSE sample is calibrated to reproduce the expected
+example 0-48 h CONUS scorecard pattern, so visual smoke tests catch accidental
+flat or stale plots.
+
 The default `config/models.yaml` points to this sample dataset so the
 config-driven runner can be exercised without the large local production data.
