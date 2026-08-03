@@ -121,9 +121,9 @@ The scorecard reads aligned NetCDF inputs from:
 input_data
 ```
 
-The repository keeps lightweight data documentation only. Put aligned NetCDF
-input data under `input_data`, or point the runner at another location with
-`paths.input_dir` in `config/scorecard.yaml`.
+The repository includes a sample aligned NetCDF input dataset under
+`input_data`. To run against another dataset, either replace that directory or
+point `paths.input_dir` in `config/scorecard.yaml` to another location.
 
 ## Production Data
 
