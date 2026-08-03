@@ -171,17 +171,20 @@ def main() -> None:
             comparison["regions"] = selection["regions"]
     write_yaml(runtime_dir / "comparisons.yaml", comparisons)
 
+    violin_group = plot_groups.get("violin", {})
     for name in ("performance_heatmap.yaml", "performance_violin.yaml"):
         cfg = apply_global_selection(read_yaml(config_dir / name), selection)
         cfg["input_path"] = str(input_dir)
         cfg["output_path"] = str(output_dir)
         cfg["require_exact_time_match"] = advanced.get("require_exact_time_match", True)
         if name == "performance_violin.yaml":
-            cfg = apply_plot_selection(cfg, plot_groups.get("violin", {}).get("plots", "all"))
+            cfg = apply_plot_selection(cfg, violin_group.get("plots", "all"))
+            cfg["plots"] = apply_overrides(cfg.get("plots", []), violin_group.get("overrides", {}))
         write_yaml(runtime_dir / name, cfg)
 
     for name in ("all_response_violin_no_hrrr.yaml", "all_response_violin_conus_hrrr_48h.yaml"):
-        cfg = apply_plot_selection(read_yaml(config_dir / name), plot_groups.get("violin", {}).get("plots", "all"))
+        cfg = apply_plot_selection(read_yaml(config_dir / name), violin_group.get("plots", "all"))
+        cfg["plots"] = apply_overrides(cfg.get("plots", []), violin_group.get("overrides", {}))
         for plot in cfg.get("plots", []):
             for key in DATE_KEYS:
                 if key in selection:
