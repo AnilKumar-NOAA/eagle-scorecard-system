@@ -1,7 +1,7 @@
-# Scorecard violin config.
+# Internal violin template.
 #
-# Run:
-#   python scripts/performance_violin.py config/performance_violin.yaml
+# User-facing violin plot definitions live in config/scorecard.yaml.
+# The runner writes logs/runtime_config/performance_violin.yaml at run time.
 
 metric: rmse
 input_path: input_data
@@ -56,30 +56,4 @@ models:
   hrrr:
     default_pattern: "{metric}.convobs.lam.*_to_*.nc"
 
-plots:
-  - name: all_response_global_conus_all_models_no_hrrr_rmse
-    title: "Forecast RMSE Guidance: All Responses"
-    subtitle: "Global and CONUS | Global models except HRRR | Forecast Hours 24-240"
-    lead_hours: [24, 240]
-    lead_step: 24
-    regions: [global, conus]
-    models: [nested_eagle_global, gfs, aigfs, aifs]
-    # Per-plot overrides are supported, for example:
-    # start_date: "2025-02-25"
-    # end_date: "2025-02-26"
-    # months: [2]
-    # variables_v2:
-    #   surface:
-    #     - {key: 2m_temperature, label: 2m Temperature, units: K, enabled: true}
-    #   upper:
-    #     - {key: temperature, label: Temperature, units: K, levels: [500, 850], enabled: true}
-    output: violin_regions-global-conus_models-nested_eagle_global-gfs-aigfs-aifs_rmse_f024-f240.png
-
-  - name: all_response_conus_gfs_nested_hrrr_48h_rmse
-    title: "Forecast RMSE Guidance: All Responses"
-    subtitle: "CONUS only | GFS, Nested-EAGLE LAM, and HRRR | Forecast Hours 0-48"
-    lead_hours: [0, 48]
-    lead_step: 6
-    regions: [conus]
-    models: [nested_eagle_lam, gfs, hrrr]
-    output: violin_regions-conus_models-nested_eagle_lam-gfs-hrrr_rmse_f000-f048.png
+plots: []

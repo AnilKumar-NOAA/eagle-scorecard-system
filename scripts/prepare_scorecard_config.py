@@ -80,6 +80,10 @@ def apply_plot_selection(config: dict[str, Any], names: Any) -> dict[str, Any]:
     return out
 
 
+def selected_plots(plots: list[dict[str, Any]], names: Any) -> list[dict[str, Any]]:
+    return filter_named(copy.deepcopy(plots), names)
+
+
 def variables_v2_to_variables_yaml(base: dict[str, Any], variables_v2: dict[str, Any]) -> dict[str, Any]:
     out = copy.deepcopy(base)
     row_groups: list[dict[str, Any]] = []
@@ -154,14 +158,10 @@ def main() -> None:
     write_yaml(runtime_dir / "variables.yaml", variables_cfg)
 
     config_scorecards = plot_groups.get("config_scorecards", {})
-    comparisons = read_yaml(config_dir / "comparisons.yaml")
+    comparisons = {"comparisons": copy.deepcopy(config_scorecards.get("plots", []))}
     comparisons["comparisons"] = filter_named(
         comparisons.get("comparisons", []),
         config_scorecards.get("comparisons", "all"),
-    )
-    comparisons["comparisons"] = apply_overrides(
-        comparisons["comparisons"],
-        config_scorecards.get("overrides", {}),
     )
     for comparison in comparisons["comparisons"]:
         for key in DATE_KEYS:
@@ -172,24 +172,31 @@ def main() -> None:
     write_yaml(runtime_dir / "comparisons.yaml", comparisons)
 
     violin_group = plot_groups.get("violin", {})
+    violin_plots = selected_plots(
+        violin_group.get("plots", []),
+        violin_group.get("selected", "all"),
+    )
     for name in ("performance_heatmap.yaml", "performance_violin.yaml"):
         cfg = apply_global_selection(read_yaml(config_dir / name), selection)
         cfg["input_path"] = str(input_dir)
         cfg["output_path"] = str(output_dir)
         cfg["require_exact_time_match"] = advanced.get("require_exact_time_match", True)
         if name == "performance_violin.yaml":
-            cfg = apply_plot_selection(cfg, violin_group.get("plots", "all"))
-            cfg["plots"] = apply_overrides(cfg.get("plots", []), violin_group.get("overrides", {}))
+            cfg["plots"] = copy.deepcopy(violin_plots)
         write_yaml(runtime_dir / name, cfg)
 
-    for name in ("all_response_violin_no_hrrr.yaml", "all_response_violin_conus_hrrr_48h.yaml"):
-        cfg = apply_plot_selection(read_yaml(config_dir / name), violin_group.get("plots", "all"))
-        cfg["plots"] = apply_overrides(cfg.get("plots", []), violin_group.get("overrides", {}))
+    violin_runtime_files = {
+        "plot_violin_all_responses_no_hrrr.py": "all_response_violin_no_hrrr.yaml",
+        "plot_violin_all_responses_conus_hrrr_48h.py": "all_response_violin_conus_hrrr_48h.yaml",
+    }
+    for script_name, runtime_name in violin_runtime_files.items():
+        cfg = {"plots": [copy.deepcopy(plot) for plot in violin_plots if plot.get("script") == script_name]}
         for plot in cfg.get("plots", []):
+            plot.pop("script", None)
             for key in DATE_KEYS:
                 if key in selection:
                     plot[key] = selection[key]
-        write_yaml(runtime_dir / name, cfg)
+        write_yaml(runtime_dir / runtime_name, cfg)
 
     enabled = {key: bool(value.get("enabled", True)) for key, value in plot_groups.items()}
     runner_cfg = {

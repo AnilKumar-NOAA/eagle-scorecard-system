@@ -37,15 +37,18 @@ You can also pass an alternate top-level config:
 To run only the config-driven comparison scorecards:
 
 ```bash
-python scripts/run_scorecard.py --config-dir config --comparison all
+python scripts/prepare_scorecard_config.py --config config/scorecard.yaml
+python scripts/run_scorecard.py --config-dir logs/runtime_config --comparison all
 ```
 
 The heatmap and violin scripts can still be run directly when you want to debug
-or iterate on only one plot type:
+or iterate on only one plot type. Generate runtime YAML from `scorecard.yaml`
+first:
 
 ```bash
+python scripts/prepare_scorecard_config.py --config config/scorecard.yaml
 python scripts/performance_heatmap.py config/performance_heatmap.yaml
-python scripts/performance_violin.py config/performance_violin.yaml
+python scripts/performance_violin.py logs/runtime_config/performance_violin.yaml
 ```
 
 ## Flexible Plot Selection
@@ -56,7 +59,7 @@ For community users, start with `config/scorecard.yaml`:
 - Model filters: edit `selection.models`
 - Region filters: edit `selection.regions`
 - Plot groups: set any `plot_groups.<name>.enabled` value to `false`
-- Plot text/output overrides: edit `plot_groups.<name>.overrides`
+- Plot text/output settings: edit the relevant item under `plot_groups.<name>.plots`
 - Variable filters: edit `variables_v2`, set `enabled: false`, or change upper-air `levels`
 
 The runner creates normalized runtime YAML under `logs/runtime_config/` and uses
@@ -81,16 +84,16 @@ plot_groups:
   config_scorecards:
     enabled: true
     comparisons: all
-    overrides:
-      nested_lam_vs_hrrr_conus_6km:
+    plots:
+      - name: nested_lam_vs_hrrr_conus_6km
         title: "Nested-EAGLE CONUS vs HRRR"
 
   violin:
     enabled: true
-    plots:
+    selected:
       - all_response_global_conus_all_models_no_hrrr_rmse
-    overrides:
-      all_response_global_conus_all_models_no_hrrr_rmse:
+    plots:
+      - name: all_response_global_conus_all_models_no_hrrr_rmse
         title: "Forecast RMSE Guidance: All Responses"
         subtitle: "Global and CONUS | All global models except HRRR | Forecast Hours 24-240"
 ```
