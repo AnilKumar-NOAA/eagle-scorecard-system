@@ -9,11 +9,15 @@ paths:
   log_dir: logs
 
 selection:
-  # Optional date filters. Leave blank to use every date in the input files.
-  # start_date: "2025-02-25"
+  # Optional temporal selection. Leave blank to use every date in the input files.
+  # All selected models are matched on the exact same t0 and forecast-hour
+  # coordinates after these filters are applied when require_exact_time_match is true.
+  # Use any combination:
+  # start_date: "2025-01-01"
   # end_date: "2025-12-31"
   # years: [2025]
-  # months: [2, 3]
+  # months: [1, 2, 12]
+  require_exact_time_match: true
 
   # Model keys available in config/models.yaml.
   models:
@@ -136,4 +140,3 @@ plot_groups:
 advanced:
   config_dir: config
   runtime_config_dir: logs/runtime_config
-  require_exact_time_match: true
