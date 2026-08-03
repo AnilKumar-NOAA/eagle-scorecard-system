@@ -129,6 +129,10 @@ def main() -> None:
     paths = master.get("paths", {})
     selection = master.get("selection", {})
     plot_groups = master.get("plot_groups", {})
+    require_exact_time_match = selection.get(
+        "require_exact_time_match",
+        advanced.get("require_exact_time_match", True),
+    )
 
     input_dir = resolve_path(repo, paths.get("input_dir", "input_data"))
     output_dir = resolve_path(repo, paths.get("output_dir", "outputs"))
@@ -180,7 +184,7 @@ def main() -> None:
         cfg = apply_global_selection(read_yaml(config_dir / name), selection)
         cfg["input_path"] = str(input_dir)
         cfg["output_path"] = str(output_dir)
-        cfg["require_exact_time_match"] = advanced.get("require_exact_time_match", True)
+        cfg["require_exact_time_match"] = require_exact_time_match
         if name == "performance_violin.yaml":
             cfg["plots"] = copy.deepcopy(violin_plots)
         write_yaml(runtime_dir / name, cfg)

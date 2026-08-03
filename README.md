@@ -56,6 +56,7 @@ python scripts/performance_violin.py logs/runtime_config/performance_violin.yaml
 For community users, start with `config/scorecard.yaml`:
 
 - Date filters: `start_date`, `end_date`, `years`, `months`
+- Exact matching: `selection.require_exact_time_match`
 - Model filters: edit `selection.models`
 - Region filters: edit `selection.regions`
 - Plot groups: set any `plot_groups.<name>.enabled` value to `false`
@@ -68,6 +69,20 @@ debugging and preserve the current figure formats.
 
 For example, to select only 2m temperature plus 500/850 hPa temperature, add this
 under `selection:` in `config/scorecard.yaml`:
+
+```yaml
+# Optional temporal selection. Leave blank to use every date in the input files.
+# All selected models are matched on the exact same t0 and forecast-hour
+# coordinates after these filters are applied when require_exact_time_match is true.
+# Use any combination:
+start_date: "2025-01-01"
+end_date: "2025-12-31"
+years: [2025]
+months: [1, 2, 12]
+require_exact_time_match: true
+```
+
+For variable selection:
 
 ```yaml
 variables_v2:
