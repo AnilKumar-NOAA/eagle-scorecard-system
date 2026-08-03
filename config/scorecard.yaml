@@ -41,6 +41,9 @@ plot_groups:
   config_scorecards:
     enabled: true
     comparisons: all
+    overrides:
+      nested_lam_vs_hrrr_conus_6km:
+        title: "Nested-EAGLE CONUS vs HRRR"
 
   scorecard_style_rmse:
     enabled: true

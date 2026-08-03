@@ -56,6 +56,7 @@ For community users, start with `config/scorecard.yaml`:
 - Model filters: edit `selection.models`
 - Region filters: edit `selection.regions`
 - Plot groups: set any `plot_groups.<name>.enabled` value to `false`
+- Plot text/output overrides: edit `plot_groups.<name>.overrides`
 - Variable filters: edit `variables_v2`, set `enabled: false`, or change upper-air `levels`
 
 The runner creates normalized runtime YAML under `logs/runtime_config/` and uses
@@ -71,6 +72,18 @@ variables_v2:
     - {key: 2m_temperature, label: 2m Temperature, units: K, enabled: true}
   upper:
     - {key: temperature, label: Temperature, units: K, levels: [500, 850], enabled: true}
+```
+
+For example, to change the title of one comparison plot:
+
+```yaml
+plot_groups:
+  config_scorecards:
+    enabled: true
+    comparisons: all
+    overrides:
+      nested_lam_vs_hrrr_conus_6km:
+        title: "Nested-EAGLE CONUS vs HRRR"
 ```
 
 ## Input Data
