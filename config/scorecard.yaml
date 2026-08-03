@@ -41,19 +41,56 @@ plot_groups:
   config_scorecards:
     enabled: true
     comparisons: all
-    overrides:
-      nested_global_vs_gfs_regions:
+    plots:
+      - name: nested_global_vs_gfs_regions
+        type: regional
+        target_model: nested_eagle_global
+        reference_model: gfs
         title: "Nested-EAGLE-Global (AI) vs GFS | Global 0.25 degree data"
+        output_png: nested_eagle_global_vs_gfs_regions_rmse_improvement_D1_D10.png
+        output_csv: nested_eagle_global_vs_gfs_regions_rmse_improvement_D1_D10.csv
+        regions: [global, northern_hemisphere, southern_hemisphere, conus]
+        lead_hours: [24, 48, 72, 96, 120, 144, 168, 192, 216, 240]
+        lead_labels: [D1, D2, D3, D4, D5, D6, D7, D8, D9, D10]
+        color_limit: 30
 
-      nested_global_vs_aigfs_regions:
+      - name: nested_global_vs_aigfs_regions
+        type: regional
+        target_model: nested_eagle_global
+        reference_model: aigfs
         title: "Nested-EAGLE-Global (AI) vs AIGFS | Global 0.25 degree data"
+        output_png: nested_eagle_global_vs_aigfs_regions_rmse_improvement_D1_D10.png
+        output_csv: nested_eagle_global_vs_aigfs_regions_rmse_improvement_D1_D10.csv
+        regions: [global, northern_hemisphere, southern_hemisphere, conus]
+        lead_hours: [24, 48, 72, 96, 120, 144, 168, 192, 216, 240]
+        lead_labels: [D1, D2, D3, D4, D5, D6, D7, D8, D9, D10]
+        color_limit: 30
 
-      nested_global_vs_aifs_regions:
+      - name: nested_global_vs_aifs_regions
+        type: regional
+        target_model: nested_eagle_global
+        reference_model: aifs
         title: "Nested-EAGLE-Global (AI) vs AIFS | Global 0.25 degree data"
+        output_png: nested_eagle_global_vs_aifs_regions_rmse_improvement_D1_D10.png
+        output_csv: nested_eagle_global_vs_aifs_regions_rmse_improvement_D1_D10.csv
+        regions: [global, northern_hemisphere, southern_hemisphere, conus]
+        lead_hours: [24, 48, 72, 96, 120, 144, 168, 192, 216, 240]
+        lead_labels: [D1, D2, D3, D4, D5, D6, D7, D8, D9, D10]
+        color_limit: 30
 
-      nested_lam_vs_hrrr_conus_6km:
+      - name: nested_lam_vs_hrrr_conus_6km
+        type: single_domain
+        target_model: nested_eagle_lam
+        reference_model: hrrr
         title: "Nested-EAGLE CONUS vs HRRR"
         subtitle: "CONUS 6 km data | 0-48 h lead time | Blue = lower RMSE / better"
+        output_png: nested_eagle_lam_vs_hrrr_conus_6km_rmse_improvement_0_48h.png
+        output_csv: nested_eagle_lam_vs_hrrr_conus_6km_rmse_improvement_0_48h.csv
+        domain: conus
+        resolution: CONUS 6 km
+        lead_hours: [0, 6, 12, 18, 24, 30, 36, 42, 48]
+        lead_labels: [0h, 6h, 12h, 18h, 24h, 30h, 36h, 42h, 48h]
+        color_limit: 25
 
   scorecard_style_rmse:
     enabled: true
@@ -72,17 +109,29 @@ plot_groups:
 
   violin:
     enabled: true
-    plots:
+    selected:
       - all_response_global_conus_all_models_no_hrrr_rmse
       - all_response_conus_gfs_nested_hrrr_48h_rmse
-    overrides:
-      all_response_global_conus_all_models_no_hrrr_rmse:
+    plots:
+      - name: all_response_global_conus_all_models_no_hrrr_rmse
+        script: plot_violin_all_responses_no_hrrr.py
         title: "Forecast RMSE Guidance: All Responses"
         subtitle: "Global and CONUS | All global models except HRRR | Forecast Hours 24-240"
+        metric: rmse
+        lead_hours: [24, 240]
+        regions: [global, conus]
+        models: [nested_eagle_global, gfs, aigfs, aifs]
+        output: violin_all_response_global_conus_all_models_no_hrrr_rmse.png
 
-      all_response_conus_gfs_nested_hrrr_48h_rmse:
+      - name: all_response_conus_gfs_nested_hrrr_48h_rmse
+        script: plot_violin_all_responses_conus_hrrr_48h.py
         title: "Forecast RMSE Guidance: All Responses"
         subtitle: "CONUS only | GFS, Nested-EAGLE CONUS, and HRRR | Forecast Hours 0-48"
+        metric: rmse
+        lead_hours: [0, 48]
+        regions: [conus]
+        models: [nested_eagle_lam, gfs, hrrr]
+        output: violin_all_response_conus_gfs_nested_hrrr_48h_rmse.png
 
 advanced:
   config_dir: config

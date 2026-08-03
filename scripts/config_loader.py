@@ -22,7 +22,7 @@ def load_all_configs(config_dir):
         "models": read_yaml(config_dir / "models.yaml"),
         "variables": read_yaml(config_dir / "variables.yaml", required=False, default={}),
         "variables_v2": read_yaml(config_dir / "variables_v2.yaml", required=False, default={}),
-        "comparisons": read_yaml(config_dir / "comparisons.yaml"),
+        "comparisons": read_yaml(config_dir / "comparisons.yaml", required=False, default={"comparisons": []}),
         "plot_style": read_yaml(config_dir / "plot_style.yaml", required=False, default={}),
         "regions": read_yaml(config_dir / "regions.yaml", required=False, default={}),
         "outputs": read_yaml(config_dir / "outputs.yaml", required=False, default={}),
