@@ -1,0 +1,217 @@
+comparison,target_model,reference_model,domain,resolution,variable_group,variable,row_label,level_hpa,lead_hour,lead_label,rmse_improvement_pct
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 250,250,0,0h,0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 250,250,6,6h,7.538
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 250,250,12,12h,24.852
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 250,250,18,18h,15.997
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 250,250,24,24h,27.12
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 250,250,30,30h,19.458
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 250,250,36,36h,32.145
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 250,250,42,42h,23.855
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 250,250,48,48h,36.599
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 500,500,0,0h,0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 500,500,6,6h,2.172
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 500,500,12,12h,10.641
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 500,500,18,18h,-0.348
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 500,500,24,24h,13.703
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 500,500,30,30h,16.069
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 500,500,36,36h,18.999
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 500,500,42,42h,12.382
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 500,500,48,48h,24.945
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 850,850,0,0h,-0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 850,850,6,6h,16.953
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 850,850,12,12h,11.244
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 850,850,18,18h,2.1
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 850,850,24,24h,15.937
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 850,850,30,30h,13.176
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 850,850,36,36h,22.043
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 850,850,42,42h,11.972
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,geopotential_height,geopotential_height,geopotential_height 850,850,48,48h,21.676
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 250,250,0,0h,-0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 250,250,6,6h,-12.653
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 250,250,12,12h,9.682
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 250,250,18,18h,9.456
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 250,250,24,24h,13.377
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 250,250,30,30h,15.916
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 250,250,36,36h,17.789
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 250,250,42,42h,22.761
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 250,250,48,48h,20.94
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 500,500,0,0h,0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 500,500,6,6h,-4.652
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 500,500,12,12h,3.781
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 500,500,18,18h,4.385
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 500,500,24,24h,8.865
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 500,500,30,30h,14.102
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 500,500,36,36h,14.586
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 500,500,42,42h,10.291
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 500,500,48,48h,16.945
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 850,850,0,0h,0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 850,850,6,6h,-2.36
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 850,850,12,12h,3.872
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 850,850,18,18h,5.322
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 850,850,24,24h,12.374
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 850,850,30,30h,9.477
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 850,850,36,36h,13.331
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 850,850,42,42h,16.571
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,zonal_wind,zonal_wind,zonal_wind 850,850,48,48h,18.445
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 250,250,0,0h,0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 250,250,6,6h,-3.554
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 250,250,12,12h,8.981
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 250,250,18,18h,7.006
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 250,250,24,24h,15.104
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 250,250,30,30h,21.553
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 250,250,36,36h,18.421
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 250,250,42,42h,17.087
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 250,250,48,48h,21.078
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 500,500,0,0h,-0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 500,500,6,6h,-1.838
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 500,500,12,12h,4.547
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 500,500,18,18h,2.649
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 500,500,24,24h,11.085
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 500,500,30,30h,9.553
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 500,500,36,36h,14.273
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 500,500,42,42h,9.04
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 500,500,48,48h,17.786
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 850,850,0,0h,-0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 850,850,6,6h,6.582
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 850,850,12,12h,4.924
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 850,850,18,18h,8.483
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 850,850,24,24h,13.099
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 850,850,30,30h,11.299
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 850,850,36,36h,14.124
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 850,850,42,42h,8.46
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,meridional_wind,meridional_wind,meridional_wind 850,850,48,48h,18.906
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 250,250,0,0h,-0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 250,250,6,6h,16.359
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 250,250,12,12h,10.849
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 250,250,18,18h,20.004
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 250,250,24,24h,19.39
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 250,250,30,30h,25.642
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 250,250,36,36h,24.992
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 250,250,42,42h,31.792
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 250,250,48,48h,29.351
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 500,500,0,0h,-0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 500,500,6,6h,10.428
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 500,500,12,12h,15.413
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 500,500,18,18h,9.563
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 500,500,24,24h,17.61
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 500,500,30,30h,22.393
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 500,500,36,36h,21.628
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 500,500,42,42h,13.569
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 500,500,48,48h,23.065
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 850,850,0,0h,-0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 850,850,6,6h,8.93
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 850,850,12,12h,2.06
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 850,850,18,18h,14.964
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 850,850,24,24h,16.614
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 850,850,30,30h,23.663
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 850,850,36,36h,17.777
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 850,850,42,42h,15.393
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,temperature,temperature,temperature 850,850,48,48h,25.75
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 250,250,0,0h,-0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 250,250,6,6h,13.248
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 250,250,12,12h,13.18
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 250,250,18,18h,13.165
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 250,250,24,24h,17.791
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 250,250,30,30h,16.143
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 250,250,36,36h,19.711
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 250,250,42,42h,11.324
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 250,250,48,48h,20.518
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 500,500,0,0h,0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 500,500,6,6h,-2.995
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 500,500,12,12h,4.376
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 500,500,18,18h,3.355
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 500,500,24,24h,10.667
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 500,500,30,30h,1.618
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 500,500,36,36h,12.989
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 500,500,42,42h,8.376
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 500,500,48,48h,14.972
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 850,850,0,0h,-0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 850,850,6,6h,-9.271
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 850,850,12,12h,1.919
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 850,850,18,18h,5.427
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 850,850,24,24h,11.204
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 850,850,30,30h,1.43
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 850,850,36,36h,9.812
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 850,850,42,42h,9.897
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,specific_humidity,specific_humidity,specific_humidity 850,850,48,48h,15.148
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 250,250,0,0h,0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 250,250,6,6h,-12.145
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 250,250,12,12h,9.473
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 250,250,18,18h,5.452
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 250,250,24,24h,14.589
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 250,250,30,30h,19.744
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 250,250,36,36h,17.389
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 250,250,42,42h,22.03
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 250,250,48,48h,21.772
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 500,500,0,0h,0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 500,500,6,6h,-1.294
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 500,500,12,12h,2.472
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 500,500,18,18h,-2.219
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 500,500,24,24h,8.948
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 500,500,30,30h,18.513
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 500,500,36,36h,12.328
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 500,500,42,42h,2.271
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 500,500,48,48h,15.66
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 850,850,0,0h,-0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 850,850,6,6h,9.091
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 850,850,12,12h,-0.232
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 850,850,18,18h,2.068
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 850,850,24,24h,6.574
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 850,850,30,30h,14.837
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 850,850,36,36h,8.534
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 850,850,42,42h,8.013
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,wind_speed,wind_speed,wind_speed 850,850,48,48h,13.582
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,surface_pressure,surface_pressure,,0,0h,0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,surface_pressure,surface_pressure,,6,6h,0.226
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,surface_pressure,surface_pressure,,12,12h,1.003
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,surface_pressure,surface_pressure,,18,18h,0.959
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,surface_pressure,surface_pressure,,24,24h,1.825
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,surface_pressure,surface_pressure,,30,30h,0.849
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,surface_pressure,surface_pressure,,36,36h,1.825
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,surface_pressure,surface_pressure,,42,42h,1.762
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,surface_pressure,surface_pressure,,48,48h,2.816
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_zonal_wind,10m_zonal_wind,,0,0h,-0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_zonal_wind,10m_zonal_wind,,6,6h,15.225
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_zonal_wind,10m_zonal_wind,,12,12h,16.405
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_zonal_wind,10m_zonal_wind,,18,18h,13.639
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_zonal_wind,10m_zonal_wind,,24,24h,20.379
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_zonal_wind,10m_zonal_wind,,30,30h,21.007
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_zonal_wind,10m_zonal_wind,,36,36h,21.352
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_zonal_wind,10m_zonal_wind,,42,42h,18.342
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_zonal_wind,10m_zonal_wind,,48,48h,22.496
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_meridional_wind,10m_meridional_wind,,0,0h,0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_meridional_wind,10m_meridional_wind,,6,6h,15.753
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_meridional_wind,10m_meridional_wind,,12,12h,16.679
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_meridional_wind,10m_meridional_wind,,18,18h,13.811
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_meridional_wind,10m_meridional_wind,,24,24h,20.117
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_meridional_wind,10m_meridional_wind,,30,30h,21.194
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_meridional_wind,10m_meridional_wind,,36,36h,21.049
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_meridional_wind,10m_meridional_wind,,42,42h,17.901
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_meridional_wind,10m_meridional_wind,,48,48h,22.018
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_temperature,2m_temperature,,0,0h,0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_temperature,2m_temperature,,6,6h,17.398
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_temperature,2m_temperature,,12,12h,17.668
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_temperature,2m_temperature,,18,18h,14.221
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_temperature,2m_temperature,,24,24h,18.436
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_temperature,2m_temperature,,30,30h,18.024
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_temperature,2m_temperature,,36,36h,18.341
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_temperature,2m_temperature,,42,42h,19.231
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_temperature,2m_temperature,,48,48h,21.204
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_specific_humidity,2m_specific_humidity,,0,0h,0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_specific_humidity,2m_specific_humidity,,6,6h,10.635
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_specific_humidity,2m_specific_humidity,,12,12h,12.352
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_specific_humidity,2m_specific_humidity,,18,18h,15.561
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_specific_humidity,2m_specific_humidity,,24,24h,16.338
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_specific_humidity,2m_specific_humidity,,30,30h,18.217
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_specific_humidity,2m_specific_humidity,,36,36h,20.202
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_specific_humidity,2m_specific_humidity,,42,42h,21.184
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,2m_specific_humidity,2m_specific_humidity,,48,48h,19.07
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_wind_speed,10m_wind_speed,,0,0h,-0.0
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_wind_speed,10m_wind_speed,,6,6h,12.546
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_wind_speed,10m_wind_speed,,12,12h,13.169
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_wind_speed,10m_wind_speed,,18,18h,8.24
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_wind_speed,10m_wind_speed,,24,24h,12.252
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_wind_speed,10m_wind_speed,,30,30h,16.094
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_wind_speed,10m_wind_speed,,36,36h,16.638
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_wind_speed,10m_wind_speed,,42,42h,12.179
+nested_lam_vs_hrrr_conus_6km,Nested-EAGLE-LAM (AI-HR),HRRR,conus,CONUS 6 km,surface,10m_wind_speed,10m_wind_speed,,48,48h,14.009

@@ -1,50 +1,92 @@
-data_base: sample_data/aligned_20250225_20251231
+data_base: data/new_data
 models:
   nested_eagle_global:
     label: Nested-EAGLE-Global (AI)
-    directory: nested_eagle_global_2025 
+    directory: nested_eagle_global_2025
     global_patterns:
-    - rmse.convobs.nested-global.2025-*_to_2025-*.nc
+    - rmse.convobs.nested-global.nc
     regional_patterns:
-    - rmse.convobs.nested-global.{region}.2025-*_to_2025-*.nc
+    - rmse.convobs.nested-global.{region}.nc
+    color: royalblue
+    linewidth: 2.5
+    linestyle: '-'
+    marker: o
+    zorder: 5
+    global_pattern: '{metric}.convobs.nested-global.nc'
+    regional_pattern: '{metric}.convobs.nested-global.{region}.nc'
+    plot_label: Nested-EAGLE
+    plot_sublabel: Global AI
   nested_eagle_lam:
     label: Nested-EAGLE-LAM (AI-HR)
-    directory: nested_eagle_lam_2025 
+    directory: nested_eagle_lam_2025
     default_patterns:
-    - rmse.convobs.nested-lam.2025-*_to_2025-*.nc
-    - rmse.convobs.nested_lam.2025-*_to_2025-*.nc
+    - rmse.convobs.nested-lam.nc
+    color: dodgerblue
+    linewidth: 2.5
+    linestyle: '-'
+    marker: o
+    zorder: 5
+    default_pattern: '{metric}.convobs.nested-lam.nc'
+    plot_label: Nested-EAGLE
+    plot_sublabel: LAM AI-HR
   gfs:
     label: GFS
     directory: gfs_2025
     global_patterns:
-    - rmse.convobs.global.2025-*_to_2025-*.nc
+    - rmse.convobs.global.nc
     regional_patterns:
-    - rmse.convobs.global.{region}.2025-*_to_2025-*.nc
-    - rmse.convobs.global.conus.2025-*_to_2025-*.nc
+    - rmse.convobs.global.{region}.nc
+    color: black
+    linewidth: 2.0
+    linestyle: '-'
+    marker: s
+    zorder: 4
+    global_pattern: '{metric}.convobs.global.nc'
+    regional_pattern: '{metric}.convobs.global.{region}.nc'
+    plot_label: GFS
+    plot_sublabel: ''
   aigfs:
     label: AIGFS
     directory: aigfs_2025
     global_patterns:
-    - rmse.convobs.global.2025-*_to_2025-*.nc
+    - rmse.convobs.global.nc
     regional_patterns:
-    - rmse.convobs.global.{region}.2025-*_to_2025-*.nc
-  ecmwf_ifs:
-    label: ECMWF IFS
-    directory: ecmwf_ifs_2025
-    global_patterns:
-    - rmse.convobs.global.2025-*_to_2025-*.nc
-    regional_patterns:
-    - rmse.convobs.global.{region}.2025-*_to_2025-*.nc
+    - rmse.convobs.global.{region}.nc
+    color: forestgreen
+    linewidth: 2.0
+    linestyle: '-'
+    marker: ^
+    zorder: 4
+    global_pattern: '{metric}.convobs.global.nc'
+    regional_pattern: '{metric}.convobs.global.{region}.nc'
+    plot_label: AIGFS
+    plot_sublabel: ''
   aifs:
     label: AIFS
     directory: aifs_2025
     global_patterns:
-    - rmse.convobs.global.2025-*_to_2025-*.nc
+    - rmse.convobs.global.nc
     regional_patterns:
-    - rmse.convobs.global.{region}.2025-*_to_2025-*.nc
+    - rmse.convobs.global.{region}.nc
+    color: firebrick
+    linewidth: 2.0
+    linestyle: '-'
+    marker: D
+    zorder: 4
+    global_pattern: '{metric}.convobs.global.nc'
+    regional_pattern: '{metric}.convobs.global.{region}.nc'
+    plot_label: AIFS
+    plot_sublabel: ''
   hrrr:
     label: HRRR
     directory: hrrr_2025
     default_patterns:
-    - rmse.convobs.lam*.2025-*_to_2025-*.nc
-    - rmse.convobs.hrrr*.2025-*_to_2025-*.nc
+    - rmse.convobs.lam.nc
+    color: darkorange
+    linewidth: 2.0
+    linestyle: '-'
+    marker: s
+    zorder: 4
+    default_pattern: '{metric}.convobs.lam.nc'
+    plot_label: HRRR
+    plot_sublabel: ''

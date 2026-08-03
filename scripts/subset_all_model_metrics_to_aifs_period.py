@@ -14,7 +14,6 @@ AIFS_METRICS = ROOT / "AIFS" / "aifs_2025_outputs"
 INPUT_DIRS = {
     "aifs_2025": AIFS_METRICS,
     "aigfs_2025": DATA / "aigfs_2025",
-    "ecmwf_ifs_2025": DATA / "ecmwf_ifs_2025",
     "gfs_2025": DATA / "gfs_zarr_2025",
     "hrrr_2025": DATA / "hrrr_2025",
     "nested_eagle_global_2025": DATA / "nested_eagle_2025",

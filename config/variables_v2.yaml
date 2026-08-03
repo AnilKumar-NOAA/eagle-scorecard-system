@@ -1,0 +1,57 @@
+surface:
+  - key: 2m_temperature
+    label: 2m Temperature
+    units: K
+    enabled: true
+
+  - key: 10m_zonal_wind
+    label: 10m Zonal Wind
+    units: m/s
+    enabled: true
+
+  - key: 10m_meridional_wind
+    label: 10m Meridional Wind
+    units: m/s
+    enabled: true
+
+  - key: 10m_wind_speed
+    label: 10m Wind Speed
+    units: m/s
+    enabled: true
+
+upper:
+  - key: geopotential_height
+    label: Geopotential Height
+    units: m
+    levels: [250, 500, 850]
+    enabled: true
+
+  - key: zonal_wind
+    label: Zonal Wind
+    units: m/s
+    levels: [250, 500, 850]
+    enabled: true
+
+  - key: meridional_wind
+    label: Meridional Wind
+    units: m/s
+    levels: [250, 500, 850]
+    enabled: true
+
+  - key: wind_speed
+    label: Wind Speed
+    units: m/s
+    levels: [250, 500, 850]
+    enabled: true
+
+  - key: temperature
+    label: Temperature
+    units: K
+    levels: [250, 500, 850]
+    enabled: true
+
+  - key: specific_humidity
+    label: Specific Humidity
+    units: kg/kg
+    levels: [250, 500, 850]
+    enabled: true

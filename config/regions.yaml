@@ -1,0 +1,38 @@
+order:
+  - global
+  - northern_hemisphere
+  - southern_hemisphere
+  - conus
+
+regions:
+  global:
+    label: Global
+    file_token: global
+
+  northern_hemisphere:
+    label: Northern Hemisphere
+    file_token: northern_hemisphere
+
+  southern_hemisphere:
+    label: Southern Hemisphere
+    file_token: southern_hemisphere
+
+  conus:
+    label: CONUS
+    file_token: conus
+
+  europe:
+    label: Europe
+    file_token: europe
+
+  tropics:
+    label: Tropics
+    file_token: tropics
+
+  polar_north:
+    label: Polar North
+    file_token: polar_north
+
+  polar_south:
+    label: Polar South
+    file_token: polar_south

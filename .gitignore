@@ -7,7 +7,6 @@ __pycache__/
 
 # Generated runtime artifacts
 logs/
-outputs/
 data_system/outputs/
 
 # Large local input datasets

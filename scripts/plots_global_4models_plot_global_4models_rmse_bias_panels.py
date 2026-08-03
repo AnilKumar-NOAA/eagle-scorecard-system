@@ -7,6 +7,18 @@ import numpy as np
 import xarray as xr
 import matplotlib.pyplot as plt
 
+
+DERIVED_SURFACE_SKIP_VARS = {"surface_pressure", "2m_specific_humidity"}
+DERIVED_SURFACE_SKIP_MODEL_TOKENS = ("AIGFS", "AIFS")
+
+def skip_aigfs_aifs_derived_surface(model_name, varname, level=None):
+    return (
+        level is None
+        and varname in DERIVED_SURFACE_SKIP_VARS
+        and any(token in str(model_name) for token in DERIVED_SURFACE_SKIP_MODEL_TOKENS)
+    )
+
+
 # ----------------------------------------------------------------------
 # scorecard_system output control
 # All figures, CSVs, and text products from this script are written here.
@@ -16,7 +28,7 @@ import os as _scorecard_os
 from pathlib import Path as _scorecard_Path
 SCORECARD_SYSTEM_OUTPUT_DIR = _scorecard_Path(_scorecard_os.environ.get(
     "SCORECARD_SYSTEM_OUTPUT_DIR",
-    "/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/data_system/outputs"
+    str(Path(__file__).resolve().parents[1] / "outputs")
 ))
 SCORECARD_SYSTEM_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -26,29 +38,29 @@ warnings.filterwarnings("ignore")
 # ============================================================
 # Paths
 # ============================================================
-SCORECARD = Path("/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/data")
+SCORECARD = Path(__import__("os").environ.get("SCORECARD_SYSTEM_DATA_DIR", Path(__file__).resolve().parents[1] / "data/new_data"))
 OUTDIR = SCORECARD_SYSTEM_OUTPUT_DIR
 OUTDIR.mkdir(parents=True, exist_ok=True)
 
 MODEL_INFO = {
     "Nested EAGLE": {
-        "dir": SCORECARD / "nested_eagle_2025",
-        "pattern": "{metric}.convobs.nested-global.2025-*_to_2025-*.nc",
+        "dir": SCORECARD / "nested_eagle_global_2025",
+        "pattern": "{metric}.convobs.nested-global.nc",
         "color": "royalblue",
     },
     "GFS": {
-        "dir": SCORECARD / "gfs_zarr_2025",
-        "pattern": "{metric}.convobs.global.2025-*_to_2025-*.nc",
+        "dir": SCORECARD / "gfs_2025",
+        "pattern": "{metric}.convobs.global.nc",
         "color": "black",
     },
-    "ECMWF IFS": {
-        "dir": SCORECARD / "ecmwf_ifs_2025",
-        "pattern": "{metric}.convobs.global.2025-*_to_2025-*.nc",
+    "AIFS": {
+        "dir": SCORECARD / "aifs_2025",
+        "pattern": "{metric}.convobs.global.nc",
         "color": "crimson",
     },
     "AIGFS": {
         "dir": SCORECARD / "aigfs_2025",
-        "pattern": "{metric}.convobs.global.2025-*_to_2025-*.nc",
+        "pattern": "{metric}.convobs.global.nc",
         "color": "forestgreen",
     },
 }
@@ -56,7 +68,7 @@ MODEL_INFO = {
 # ============================================================
 # Plot settings
 # ============================================================
-FHR_PLOT = np.arange(0, 241, 6)
+FHR_PLOT = np.arange(0, 241, 24)
 X_DAYS = FHR_PLOT / 24.0
 XTICKS_MAJOR = np.arange(0, 11, 1)
 XTICK_LABELS = [f"D{i}" for i in XTICKS_MAJOR]
@@ -283,6 +295,9 @@ def plot_surface_panel(metric_key, model_means):
         subplot_vals = []
 
         for model, ds in model_means.items():
+            if skip_aigfs_aifs_derived_surface(model, varname):
+                continue
+
             series = get_surface_series(ds, varname)
             if series is None:
                 continue

@@ -14,7 +14,7 @@ Rows:
   AI Global:
     - Nested-EAGLE (Global)
     - AIGFS
-    - ECMWF IFS
+    - AIFS
 
   AI-HR:
     - Nested-EAGLE-LAM
@@ -32,6 +32,18 @@ from pathlib import Path
 import numpy as np
 import xarray as xr
 import matplotlib.pyplot as plt
+
+
+DERIVED_SURFACE_SKIP_VARS = {"surface_pressure", "2m_specific_humidity"}
+DERIVED_SURFACE_SKIP_MODEL_TOKENS = ("AIGFS", "AIFS")
+
+def skip_aigfs_aifs_derived_surface(model_name, varname, level=None):
+    return (
+        level is None
+        and varname in DERIVED_SURFACE_SKIP_VARS
+        and any(token in str(model_name) for token in DERIVED_SURFACE_SKIP_MODEL_TOKENS)
+    )
+
 import matplotlib as mpl
 
 # ----------------------------------------------------------------------
@@ -43,11 +55,11 @@ import os as _scorecard_os
 from pathlib import Path as _scorecard_Path
 SCORECARD_SYSTEM_DATA_DIR = _scorecard_Path(_scorecard_os.environ.get(
     "SCORECARD_SYSTEM_DATA_DIR",
-    "/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/data"
+    str(Path(__file__).resolve().parents[1] / "data/new_data")
 ))
 SCORECARD_SYSTEM_OUTPUT_DIR = _scorecard_Path(_scorecard_os.environ.get(
     "SCORECARD_SYSTEM_OUTPUT_DIR",
-    "/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/outputs"
+    str(Path(__file__).resolve().parents[1] / "outputs")
 ))
 SCORECARD_SYSTEM_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -57,7 +69,7 @@ SCORECARD_SYSTEM_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 # Paths
 # ============================================================
 
-BASE = Path("/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/data")
+BASE = Path(__import__("os").environ.get("SCORECARD_SYSTEM_DATA_DIR", Path(__file__).resolve().parents[1] / "data/new_data"))
 OUTDIR = SCORECARD_SYSTEM_OUTPUT_DIR
 OUTDIR.mkdir(parents=True, exist_ok=True)
 
@@ -100,7 +112,7 @@ MODEL_GROUPS = [
         "models": [
             "Nested-EAGLE (Global)",
             "AIGFS",
-            "ECMWF IFS",
+            "AIFS",
         ],
         "bar_color": "#dbeafe",
         "bar_text_color": "#1f4e79",
@@ -127,32 +139,32 @@ MODEL_GROUPS = [
 
 MODEL_INFO = {
     "Nested-EAGLE (Global)": {
-        "dir": BASE / "nested_eagle_2025",
-        "pattern": "rmse.convobs.nested-global.2025-*_to_2025-*.nc",
+        "dir": BASE / "nested_eagle_global_2025",
+        "pattern": "rmse.convobs.nested-global.nc",
     },
     "AIGFS": {
         "dir": BASE / "aigfs_2025",
-        "pattern": "rmse.convobs.global.2025-*_to_2025-*.nc",
+        "pattern": "rmse.convobs.global.nc",
     },
-    "ECMWF IFS": {
-        "dir": BASE / "ecmwf_ifs_2025",
-        "pattern": "rmse.convobs.global.2025-*_to_2025-*.nc",
+    "AIFS": {
+        "dir": BASE / "aifs_2025",
+        "pattern": "rmse.convobs.global.nc",
     },
     "Nested-EAGLE-LAM": {
         "dir": BASE / "nested_eagle_lam_2025",
-        "pattern": "rmse.convobs.nested-lam.2025-*_to_2025-*.nc",
+        "pattern": "rmse.convobs.nested-lam.nc",
     },
     "GFS (Global)": {
-        "dir": BASE / "gfs_zarr_2025",
-        "pattern": "rmse.convobs.global.2025-*_to_2025-*.nc",
+        "dir": BASE / "gfs_2025",
+        "pattern": "rmse.convobs.global.nc",
     },
     "GFS-CONUS": {
-        "dir": BASE / "gfs_zarr_2025",
-        "pattern": "rmse.convobs.global.conus.2025-*_to_2025-*.nc",
+        "dir": BASE / "gfs_2025",
+        "pattern": "rmse.convobs.global.conus.nc",
     },
     "HRRR": {
         "dir": BASE / "hrrr_2025",
-        "pattern": "rmse.convobs.lam*.2025-*_to_2025-*.nc",
+        "pattern": "rmse.convobs.lam.nc",
     },
 }
 
@@ -200,6 +212,11 @@ def load_model_var_series(model_name, panel):
         return np.full(len(FHRS), np.nan)
 
     varname = panel["key"]
+
+    if skip_aigfs_aifs_derived_surface(model_name, varname):
+        print(f"Skipping derived surface field for {model_name}: {varname}")
+        return np.full(len(FHRS), np.nan)
+
     arrays = []
 
     for f in files:
@@ -295,7 +312,7 @@ def choose_text_color(value, vmin, vmax):
 
 def clean_label(value, fmt):
     if not np.isfinite(value):
-        return "NA"
+        return ""
 
     label = fmt.format(value)
 
