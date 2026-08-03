@@ -84,6 +84,15 @@ plot_groups:
     overrides:
       nested_lam_vs_hrrr_conus_6km:
         title: "Nested-EAGLE CONUS vs HRRR"
+
+  violin:
+    enabled: true
+    plots:
+      - all_response_global_conus_all_models_no_hrrr_rmse
+    overrides:
+      all_response_global_conus_all_models_no_hrrr_rmse:
+        title: "Forecast RMSE Guidance: All Responses"
+        subtitle: "Global and CONUS | All global models except HRRR | Forecast Hours 24-240"
 ```
 
 ## Input Data
