@@ -1,0 +1,69 @@
+# User-facing scorecard configuration.
+#
+# Most users should only edit this file, then run:
+#   ./run_all_scorecards.sh
+
+paths:
+  input_dir: input_data
+  output_dir: outputs
+  log_dir: logs
+
+selection:
+  # Optional date filters. Leave blank to use every date in the input files.
+  # start_date: "2025-02-25"
+  # end_date: "2025-12-31"
+  # years: [2025]
+  # months: [2, 3]
+
+  # Model keys available in config/models.yaml.
+  models:
+    - nested_eagle_global
+    - nested_eagle_lam
+    - gfs
+    - aigfs
+    - aifs
+    - hrrr
+
+  regions:
+    - global
+    - northern_hemisphere
+    - southern_hemisphere
+    - conus
+
+  # Optional global variable override for YAML-driven heatmap/violin plots.
+  # variables_v2:
+  #   surface:
+  #     - {key: 2m_temperature, label: 2m Temperature, units: K, enabled: true}
+  #   upper:
+  #     - {key: temperature, label: Temperature, units: K, levels: [500, 850], enabled: true}
+
+plot_groups:
+  config_scorecards:
+    enabled: true
+    comparisons: all
+
+  scorecard_style_rmse:
+    enabled: true
+
+  global_4model_panels:
+    enabled: true
+
+  nested_lam_hrrr_gfs_0_48h:
+    enabled: true
+
+  nested_lam_hrrr_gfs_conus_d1_d10:
+    enabled: true
+
+  gfs_difference:
+    enabled: true
+
+  violin:
+    enabled: true
+    plots:
+      - all_response_global_conus_all_models_no_hrrr_rmse
+      - all_response_conus_gfs_nested_hrrr_48h_rmse
+
+advanced:
+  config_dir: config
+  runtime_config_dir: logs/runtime_config
+  require_exact_time_match: true

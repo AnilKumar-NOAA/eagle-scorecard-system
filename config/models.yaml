@@ -1,4 +1,4 @@
-data_base: data/new_data
+data_base: input_data
 models:
   nested_eagle_global:
     label: Nested-EAGLE-Global (AI)

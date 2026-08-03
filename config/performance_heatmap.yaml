@@ -4,7 +4,7 @@
 #   python scripts/performance_heatmap.py config/performance_heatmap.yaml
 
 metric: rmse
-input_path: sample_data/aligned_20250225_20251231
+input_path: input_data
 output_path: outputs
 require_exact_time_match: true
 

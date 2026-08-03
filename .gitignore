@@ -10,7 +10,10 @@ logs/
 data_system/outputs/
 
 # Large local input datasets
-data/*/
+data/
+sample_data/
+input_data/*
+!input_data/README.md
 
 # Local archives and backups
 *.zip
