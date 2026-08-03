@@ -22,7 +22,7 @@ def skip_aigfs_aifs_derived_surface(model_name, varname, level=None):
 
 
 SYSTEM_BASE = Path(__file__).resolve().parents[1]
-DATA_BASE = Path(os.environ.get("SCORECARD_SYSTEM_DATA_DIR", SYSTEM_BASE / "data/new_data"))
+DATA_BASE = Path(os.environ.get("SCORECARD_SYSTEM_DATA_DIR", SYSTEM_BASE / "input_data"))
 OUTPUT_DIR = Path(os.environ.get("SCORECARD_SYSTEM_OUTPUT_DIR", SYSTEM_BASE / "outputs"))
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 

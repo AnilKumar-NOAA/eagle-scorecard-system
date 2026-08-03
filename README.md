@@ -14,6 +14,26 @@ That one command runs the complete scorecard suite and writes plots/CSVs to
 `outputs/`. The verified reference figures in `outputs/` are tracked in Git so
 the repository preserves the same figure formats generated locally.
 
+Most user selections live in one file:
+
+```text
+config/scorecard.yaml
+```
+
+Change that file to set the input directory, output directory, log directory,
+enabled plot groups, model list, regions, dates, months, years, and optional
+variable subset. Then run the same command:
+
+```bash
+./run_all_scorecards.sh
+```
+
+You can also pass an alternate top-level config:
+
+```bash
+./run_all_scorecards.sh /path/to/my_scorecard.yaml
+```
+
 To run only the config-driven comparison scorecards:
 
 ```bash
@@ -30,14 +50,20 @@ python scripts/performance_violin.py config/performance_violin.yaml
 
 ## Flexible Plot Selection
 
-The heatmap and violin YAML files are designed for flexible subsetting:
+For community users, start with `config/scorecard.yaml`:
 
 - Date filters: `start_date`, `end_date`, `years`, `months`
-- Lead-time filters: `forecast_hours` for heatmaps, `lead_hours` and `lead_step` for violins
+- Model filters: edit `selection.models`
+- Region filters: edit `selection.regions`
+- Plot groups: set any `plot_groups.<name>.enabled` value to `false`
 - Variable filters: edit `variables_v2`, set `enabled: false`, or change upper-air `levels`
-- Plot filters: each item under `plots:` can override regions, models, dates, lead times, and variables
 
-For example, a single heatmap plot can select only 2m temperature plus 500/850 hPa temperature by defining:
+The runner creates normalized runtime YAML under `logs/runtime_config/` and uses
+that for the scripts. The plot-specific YAML files remain available for advanced
+debugging and preserve the current figure formats.
+
+For example, to select only 2m temperature plus 500/850 hPa temperature, add this
+under `selection:` in `config/scorecard.yaml`:
 
 ```yaml
 variables_v2:
@@ -47,20 +73,20 @@ variables_v2:
     - {key: temperature, label: Temperature, units: K, levels: [500, 850], enabled: true}
 ```
 
-## Sample Data
+## Input Data
 
-The repository includes a tiny synthetic fixture at:
+The scorecard reads aligned NetCDF inputs from:
 
 ```text
-sample_data/aligned_20250225_20251231
+input_data
 ```
 
 The repository keeps lightweight data documentation only. Put aligned NetCDF
-input data under `data/new_data`, or point the runner at another location with
-`SCORECARD_SYSTEM_DATA_DIR=/path/to/aligned_20250225_20251231`.
+input data under `input_data`, or point the runner at another location with
+`paths.input_dir` in `config/scorecard.yaml`.
 
 ## Production Data
 
-For real runs, set `SCORECARD_SYSTEM_DATA_DIR` to the production aligned NetCDF
-directory. The YAML files control the comparisons, date filters, lead-time
-filters, model selections, variable selections, and output names.
+For real runs, set `paths.input_dir` to the production aligned NetCDF directory.
+The top-level YAML controls the common comparisons, date filters, model
+selections, variable selections, plot groups, and output location.

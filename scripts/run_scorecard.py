@@ -88,6 +88,27 @@ def select_level(da, levels):
     return None
 
 
+def apply_time_selection(da, config):
+    if "t0" not in da.coords:
+        return da
+
+    t0 = da["t0"]
+    mask = xr.ones_like(t0, dtype=bool)
+
+    if config.get("start_date") is not None:
+        mask = mask & (t0 >= np.datetime64(config["start_date"]))
+    if config.get("end_date") is not None:
+        mask = mask & (t0 <= np.datetime64(config["end_date"]))
+    if config.get("years"):
+        mask = mask & t0.dt.year.isin([int(year) for year in config["years"]])
+    if config.get("months"):
+        mask = mask & t0.dt.month.isin([int(month) for month in config["months"]])
+
+    if "t0" in da.dims:
+        return da.where(mask, drop=True)
+    return da
+
+
 def build_rows(var_cfg):
     skip_levels = set(int(x) for x in var_cfg.get("skip_pressure_levels", []))
 
@@ -129,7 +150,7 @@ def model_files(model_cfg, model_key, region=None, comparison_type="regional"):
     return sorted(set(files))
 
 
-def mean_series(model_cfg, var_cfg, model_key, row, lead_hours, region=None, comparison_type="regional"):
+def mean_series(model_cfg, var_cfg, model_key, row, lead_hours, region=None, comparison_type="regional", selection=None):
     files = model_files(model_cfg, model_key, region=region, comparison_type=comparison_type)
     if not files:
         print(f"WARNING: no files for model={model_key} region={region}")
@@ -172,6 +193,11 @@ def mean_series(model_cfg, var_cfg, model_key, row, lead_hours, region=None, com
 
         if "t0" not in da.dims:
             da = da.expand_dims("t0")
+
+        da = apply_time_selection(da, selection or {})
+        if da.sizes.get("t0", 1) == 0:
+            ds.close()
+            continue
 
         arrays.append(da.load())
         ds.close()
@@ -300,6 +326,7 @@ def build_matrix(model_cfg, var_cfg, comparison, rows, domain):
             lead_hours,
             region=domain,
             comparison_type=comparison["type"],
+            selection=comparison,
         )
 
         ref_vals = mean_series(
@@ -310,6 +337,7 @@ def build_matrix(model_cfg, var_cfg, comparison, rows, domain):
             lead_hours,
             region=domain,
             comparison_type=comparison["type"],
+            selection=comparison,
         )
 
         matrix[i, :] = improvement_percent(ref_vals, target_vals)

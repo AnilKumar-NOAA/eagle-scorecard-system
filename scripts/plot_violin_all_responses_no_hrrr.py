@@ -12,7 +12,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from config_loader import load_all_configs
-from plot_violin_forecast_skill import load_values
+from violin_data import load_values
 
 
 def summarize(vals):
