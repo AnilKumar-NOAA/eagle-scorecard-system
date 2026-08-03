@@ -52,6 +52,15 @@ def filter_named(items: list[dict[str, Any]], names: Any) -> list[dict[str, Any]
     return [item for item in items if item.get("name") in wanted]
 
 
+def apply_overrides(items: list[dict[str, Any]], overrides: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+    updated = []
+    for item in items:
+        merged = copy.deepcopy(item)
+        merged.update(overrides.get(str(item.get("name")), {}))
+        updated.append(merged)
+    return updated
+
+
 def apply_global_selection(config: dict[str, Any], selection: dict[str, Any]) -> dict[str, Any]:
     out = copy.deepcopy(config)
     for key in DATE_KEYS:
@@ -144,10 +153,15 @@ def main() -> None:
         variables_cfg = variables_v2_to_variables_yaml(variables_cfg, selection["variables_v2"])
     write_yaml(runtime_dir / "variables.yaml", variables_cfg)
 
+    config_scorecards = plot_groups.get("config_scorecards", {})
     comparisons = read_yaml(config_dir / "comparisons.yaml")
     comparisons["comparisons"] = filter_named(
         comparisons.get("comparisons", []),
-        plot_groups.get("config_scorecards", {}).get("comparisons", "all"),
+        config_scorecards.get("comparisons", "all"),
+    )
+    comparisons["comparisons"] = apply_overrides(
+        comparisons["comparisons"],
+        config_scorecards.get("overrides", {}),
     )
     for comparison in comparisons["comparisons"]:
         for key in DATE_KEYS:
