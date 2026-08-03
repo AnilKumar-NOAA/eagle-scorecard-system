@@ -6,12 +6,24 @@ import xarray as xr
 import matplotlib.pyplot as plt
 
 
+DERIVED_SURFACE_SKIP_VARS = {"surface_pressure", "2m_specific_humidity"}
+DERIVED_SURFACE_SKIP_MODEL_TOKENS = ("AIGFS", "AIFS")
+
+def skip_aigfs_aifs_derived_surface(model_name, varname, level=None):
+    return (
+        level is None
+        and varname in DERIVED_SURFACE_SKIP_VARS
+        and any(token in str(model_name) for token in DERIVED_SURFACE_SKIP_MODEL_TOKENS)
+    )
+
+
+
 # ============================================================
 # Paths/settings
 # ============================================================
 
-BASE = Path("/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system")
-DATA_BASE = BASE / "data"
+BASE = Path(__file__).resolve().parents[1]
+DATA_BASE = BASE / "data/new_data"
 OUTDIR = BASE / "outputs"
 OUTDIR.mkdir(parents=True, exist_ok=True)
 
@@ -23,31 +35,31 @@ METRICS = ["rmse", "bias"]
 MODELS = {
     "Nested-EAGLE LAM (~6 km)": {
         "dir": DATA_BASE / "nested_eagle_lam_2025",
-        "pattern": "{metric}.convobs.nested-lam.2025-*_to_2025-*.nc",
+        "pattern": "{metric}.convobs.nested-lam.nc",
         "color": "blue",
         "lw": 1.4,
     },
     "HRRR (~6 km)": {
         "dir": DATA_BASE / "hrrr_2025",
-        "pattern": "{metric}.convobs.lam*.2025-*_to_2025-*.nc",
+        "pattern": "{metric}.convobs.lam.nc",
         "color": "orange",
         "lw": 1.4,
     },
     "GFS CONUS (0.25 deg)": {
-        "dir": DATA_BASE / "gfs_zarr_2025",
-        "pattern": "{metric}.convobs.global*.2025-*_to_2025-*.nc",
+        "dir": DATA_BASE / "gfs_2025",
+        "pattern": "{metric}.convobs.global.conus.nc",
         "color": "black",
         "lw": 1.4,
     },
     "AIGFS CONUS (0.25 deg)": {
         "dir": DATA_BASE / "aigfs_2025",
-        "pattern": "{metric}.convobs.global*.2025-*_to_2025-*.nc",
+        "pattern": "{metric}.convobs.global.conus.nc",
         "color": "green",
         "lw": 1.4,
     },
-    "ECMWF IFS CONUS (0.25 deg)": {
-        "dir": DATA_BASE / "ecmwf_ifs_2025",
-        "pattern": "{metric}.convobs.global*.2025-*_to_2025-*.nc",
+    "AIFS CONUS (0.25 deg)": {
+        "dir": DATA_BASE / "aifs_2025",
+        "pattern": "{metric}.convobs.global.conus.nc",
         "color": "red",
         "lw": 1.4,
     },
@@ -157,6 +169,10 @@ def metric_title(metric, field_type):
 
 
 def load_model_series(metric, model_name, varname, levels=None):
+    if skip_aigfs_aifs_derived_surface(model_name, varname, levels):
+        print(f"{metric.upper():4s} | {model_name:30s} | {varname:24s} | skipped derived surface field")
+        return None, None
+
     info = MODELS[model_name]
     files = sorted(info["dir"].glob(info["pattern"].format(metric=metric)))
 
@@ -443,7 +459,7 @@ def make_surface_plot(metric):
     fig.text(
         0.5,
         0.955,
-        "Nested-EAGLE LAM and HRRR are ~6 km; GFS, AIGFS, and ECMWF IFS are CONUS subsets at 0.25 degree | 6-hourly D1-D10",
+        "Nested-EAGLE LAM and HRRR are ~6 km; GFS, AIGFS, and AIFS are CONUS subsets at 0.25 degree | 6-hourly D1-D10",
         ha="center",
         va="center",
         fontsize=12,
@@ -467,7 +483,7 @@ def make_surface_plot(metric):
 
     fig.tight_layout(rect=[0.05, 0.06, 1.0, 0.86])
 
-    outpng = OUTDIR / f"{metric}_surface_conus_nested_lam_hrrr_gfs_aigfs_ecmwf_D1_D10_6hourly.png"
+    outpng = OUTDIR / f"{metric}_surface_conus_nested_lam_hrrr_gfs_aigfs_aifs_D1_D10_6hourly.png"
     fig.savefig(outpng, dpi=200, bbox_inches="tight")
     plt.close(fig)
 
@@ -525,7 +541,7 @@ def make_upper_plot(metric):
     fig.text(
         0.5,
         0.955,
-        "Nested-EAGLE LAM and HRRR are ~6 km; GFS, AIGFS, and ECMWF IFS are CONUS subsets at 0.25 degree | 6-hourly D1-D10",
+        "Nested-EAGLE LAM and HRRR are ~6 km; GFS, AIGFS, and AIFS are CONUS subsets at 0.25 degree | 6-hourly D1-D10",
         ha="center",
         va="center",
         fontsize=12,
@@ -549,7 +565,7 @@ def make_upper_plot(metric):
 
     fig.tight_layout(rect=[0.06, 0.06, 1.0, 0.86])
 
-    outpng = OUTDIR / f"{metric}_upper_conus_nested_lam_hrrr_gfs_aigfs_ecmwf_D1_D10_250_500_850_6hourly.png"
+    outpng = OUTDIR / f"{metric}_upper_conus_nested_lam_hrrr_gfs_aigfs_aifs_D1_D10_250_500_850_6hourly.png"
     fig.savefig(outpng, dpi=200, bbox_inches="tight")
     plt.close(fig)
 

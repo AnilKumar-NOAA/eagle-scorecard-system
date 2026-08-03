@@ -23,11 +23,11 @@ import os as _scorecard_os
 from pathlib import Path as _scorecard_Path
 SCORECARD_SYSTEM_DATA_DIR = _scorecard_Path(_scorecard_os.environ.get(
     "SCORECARD_SYSTEM_DATA_DIR",
-    "/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/data"
+    str(Path(__file__).resolve().parents[1] / "data/new_data")
 ))
 SCORECARD_SYSTEM_OUTPUT_DIR = _scorecard_Path(_scorecard_os.environ.get(
     "SCORECARD_SYSTEM_OUTPUT_DIR",
-    "/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/outputs"
+    str(Path(__file__).resolve().parents[1] / "outputs")
 ))
 SCORECARD_SYSTEM_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -37,7 +37,7 @@ SCORECARD_SYSTEM_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 # Paths
 # ============================================================
 
-BASE = Path("/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/data")
+BASE = Path(__import__("os").environ.get("SCORECARD_SYSTEM_DATA_DIR", Path(__file__).resolve().parents[1] / "data/new_data"))
 OUTDIR = SCORECARD_SYSTEM_OUTPUT_DIR
 OUTDIR.mkdir(parents=True, exist_ok=True)
 
@@ -86,7 +86,7 @@ MODEL_GROUPS = [
         "models": [
             "Nested-EAGLE (Global)",
             "AIGFS",
-            "ECMWF IFS",
+            "AIFS",
         ],
         "bar_color": "#dbeafe",
         "bar_text_color": "#1f4e79",
@@ -113,32 +113,32 @@ MODEL_GROUPS = [
 
 MODEL_INFO = {
     "Nested-EAGLE (Global)": {
-        "dir": BASE / "nested_eagle_2025",
-        "pattern": "rmse.convobs.nested-global.2025-*_to_2025-*.nc",
+        "dir": BASE / "nested_eagle_global_2025",
+        "pattern": "rmse.convobs.nested-global.nc",
     },
     "AIGFS": {
         "dir": BASE / "aigfs_2025",
-        "pattern": "rmse.convobs.global.2025-*_to_2025-*.nc",
+        "pattern": "rmse.convobs.global.nc",
     },
-    "ECMWF IFS": {
-        "dir": BASE / "ecmwf_ifs_2025",
-        "pattern": "rmse.convobs.global.2025-*_to_2025-*.nc",
+    "AIFS": {
+        "dir": BASE / "aifs_2025",
+        "pattern": "rmse.convobs.global.nc",
     },
     "Nested-EAGLE-LAM": {
         "dir": BASE / "nested_eagle_lam_2025",
-        "pattern": "rmse.convobs.nested-lam.2025-*_to_2025-*.nc",
+        "pattern": "rmse.convobs.nested-lam.nc",
     },
     "GFS (Global)": {
-        "dir": BASE / "gfs_zarr_2025",
-        "pattern": "rmse.convobs.global.2025-*_to_2025-*.nc",
+        "dir": BASE / "gfs_2025",
+        "pattern": "rmse.convobs.global.nc",
     },
     "GFS-CONUS": {
-        "dir": BASE / "gfs_zarr_2025",
-        "pattern": "rmse.convobs.global.conus.2025-*_to_2025-*.nc",
+        "dir": BASE / "gfs_2025",
+        "pattern": "rmse.convobs.global.conus.nc",
     },
     "HRRR": {
         "dir": BASE / "hrrr_2025",
-        "pattern": "rmse.convobs.lam*.2025-*_to_2025-*.nc",
+        "pattern": "rmse.convobs.lam.nc",
     },
 }
 

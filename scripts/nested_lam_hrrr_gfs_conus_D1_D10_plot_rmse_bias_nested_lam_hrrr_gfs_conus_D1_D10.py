@@ -5,12 +5,24 @@ import numpy as np
 import xarray as xr
 import matplotlib.pyplot as plt
 
+
+DERIVED_SURFACE_SKIP_VARS = {"surface_pressure", "2m_specific_humidity"}
+DERIVED_SURFACE_SKIP_MODEL_TOKENS = ("AIGFS", "AIFS")
+
+def skip_aigfs_aifs_derived_surface(model_name, varname, level=None):
+    return (
+        level is None
+        and varname in DERIVED_SURFACE_SKIP_VARS
+        and any(token in str(model_name) for token in DERIVED_SURFACE_SKIP_MODEL_TOKENS)
+    )
+
+
 # Shared scorecard_system output directory.
 import os as _scorecard_os
 from pathlib import Path as _scorecard_Path
 SCORECARD_SYSTEM_OUTPUT_DIR = _scorecard_Path(_scorecard_os.environ.get(
     "SCORECARD_SYSTEM_OUTPUT_DIR",
-    "/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/data_system/outputs"
+    str(Path(__file__).resolve().parents[1] / "outputs")
 ))
 SCORECARD_SYSTEM_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -20,7 +32,7 @@ SCORECARD_SYSTEM_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 # Paths/settings
 # ============================================================
 
-BASE = Path("/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/data")
+BASE = Path(__import__("os").environ.get("SCORECARD_SYSTEM_DATA_DIR", Path(__file__).resolve().parents[1] / "data/new_data"))
 OUTDIR = SCORECARD_SYSTEM_OUTPUT_DIR
 OUTDIR.mkdir(parents=True, exist_ok=True)
 
@@ -33,19 +45,19 @@ METRICS = ["rmse", "bias"]
 MODELS = {
     "Nested-EAGLE LAM (~6 km)": {
         "dir": BASE / "nested_eagle_lam_2025",
-        "pattern": "{metric}.convobs.nested-lam.2025-*_to_2025-*.nc",
+        "pattern": "{metric}.convobs.nested-lam.nc",
         "color": "blue",
         "lw": 1.4,
     },
     "HRRR (~6 km)": {
         "dir": BASE / "hrrr_2025",
-        "pattern": "{metric}.convobs.lam*.2025-*_to_2025-*.nc",
+        "pattern": "{metric}.convobs.lam.nc",
         "color": "orange",
         "lw": 1.4,
     },
     "GFS CONUS (0.25 deg)": {
-        "dir": BASE / "gfs_zarr_2025",
-        "pattern": "{metric}.convobs.global.conus.2025-*_to_2025-*.nc",
+        "dir": BASE / "gfs_2025",
+        "pattern": "{metric}.convobs.global.conus.nc",
         "color": "black",
         "lw": 1.4,
     },
@@ -148,6 +160,10 @@ def metric_title(metric, field_type):
 
 
 def load_model_series(metric, model_name, varname, levels=None):
+    if skip_aigfs_aifs_derived_surface(model_name, varname, levels):
+        print(f"{metric.upper():4s} | {model_name:30s} | {varname:24s} | skipped derived surface field")
+        return None, None
+
     info = MODELS[model_name]
     files = sorted(info["dir"].glob(info["pattern"].format(metric=metric)))
 

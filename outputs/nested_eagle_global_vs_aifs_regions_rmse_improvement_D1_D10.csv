@@ -1,0 +1,881 @@
+comparison,target_model,reference_model,domain,resolution,variable_group,variable,row_label,level_hpa,lead_hour,lead_label,rmse_improvement_pct
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,24,D1,-0.389
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,48,D2,-1.657
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,72,D3,-4.245
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,96,D4,-7.759
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,120,D5,-11.389
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,144,D6,-13.934
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,168,D7,-14.204
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,192,D8,-12.163
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,216,D9,-10.401
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,240,D10,-9.371
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,24,D1,-1.018
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,48,D2,-2.35
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,72,D3,-4.9
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,96,D4,-8.05
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,120,D5,-11.266
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,144,D6,-13.432
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,168,D7,-13.047
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,192,D8,-11.711
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,216,D9,-9.691
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,240,D10,-8.706
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,24,D1,-2.305
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,48,D2,-4.937
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,72,D3,-9.043
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,96,D4,-14.318
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,120,D5,-18.027
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,144,D6,-18.696
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,168,D7,-16.615
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,192,D8,-15.023
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,216,D9,-11.574
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,240,D10,-9.416
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,24,D1,-9.623
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,48,D2,-14.573
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,72,D3,-19.815
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,96,D4,-23.388
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,120,D5,-25.433
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,144,D6,-24.573
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,168,D7,-21.056
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,192,D8,-16.954
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,216,D9,-13.746
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,240,D10,-12.341
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,24,D1,-10.055
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,48,D2,-13.618
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,72,D3,-16.573
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,96,D4,-19.451
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,120,D5,-19.867
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,144,D6,-19.462
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,168,D7,-16.694
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,192,D8,-14.394
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,216,D9,-12.224
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,240,D10,-10.413
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,24,D1,-9.998
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,48,D2,-11.835
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,72,D3,-14.44
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,96,D4,-16.499
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,120,D5,-16.509
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,144,D6,-15.942
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,168,D7,-13.62
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,192,D8,-12.427
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,216,D9,-10.203
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,240,D10,-8.411
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,24,D1,-9.399
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,48,D2,-14.884
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,72,D3,-21.032
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,96,D4,-24.969
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,120,D5,-24.649
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,144,D6,-23.034
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,168,D7,-19.229
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,192,D8,-14.67
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,216,D9,-11.128
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,240,D10,-10.551
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,24,D1,-9.907
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,48,D2,-13.89
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,72,D3,-18.476
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,96,D4,-20.896
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,120,D5,-19.694
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,144,D6,-19.244
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,168,D7,-15.512
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,192,D8,-12.303
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,216,D9,-9.549
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,240,D10,-8.638
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,24,D1,-9.756
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,48,D2,-11.922
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,72,D3,-14.518
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,96,D4,-17.421
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,120,D5,-16.705
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,144,D6,-14.622
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,168,D7,-13.528
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,192,D8,-10.38
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,216,D9,-7.942
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,240,D10,-7.562
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 250,250,24,D1,-6.632
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 250,250,48,D2,-10.949
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 250,250,72,D3,-15.62
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 250,250,96,D4,-17.923
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 250,250,120,D5,-18.107
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 250,250,144,D6,-16.8
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 250,250,168,D7,-14.898
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 250,250,192,D8,-12.6
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 250,250,216,D9,-10.527
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 250,250,240,D10,-9.336
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 500,500,24,D1,-6.923
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 500,500,48,D2,-10.316
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 500,500,72,D3,-14.778
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 500,500,96,D4,-18.521
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 500,500,120,D5,-20.339
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 500,500,144,D6,-19.63
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 500,500,168,D7,-18.271
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 500,500,192,D8,-14.237
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 500,500,216,D9,-11.063
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 500,500,240,D10,-9.541
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 850,850,24,D1,-9.299
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 850,850,48,D2,-11.658
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 850,850,72,D3,-15.102
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 850,850,96,D4,-19.347
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 850,850,120,D5,-21.142
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 850,850,144,D6,-20.452
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 850,850,168,D7,-18.853
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 850,850,192,D8,-15.699
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 850,850,216,D9,-12.434
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,temperature,temperature,temperature 850,850,240,D10,-10.546
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,24,D1,-1.617
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,48,D2,-1.693
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,72,D3,-1.794
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,96,D4,-2.099
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,120,D5,-1.998
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,144,D6,-2.209
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,168,D7,-2.539
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,192,D8,-2.354
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,216,D9,-2.183
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,240,D10,-2.186
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,24,D1,-8.311
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,48,D2,-8.315
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,72,D3,-9.696
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,96,D4,-11.376
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,120,D5,-12.006
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,144,D6,-12.525
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,168,D7,-12.716
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,192,D8,-11.728
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,216,D9,-10.932
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,240,D10,-10.127
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,24,D1,-8.282
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,48,D2,-8.558
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,72,D3,-9.092
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,96,D4,-10.088
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,120,D5,-10.668
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,144,D6,-11.202
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,168,D7,-10.427
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,192,D8,-9.558
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,216,D9,-8.509
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,240,D10,-7.185
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,24,D1,-13.466
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,48,D2,-16.999
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,72,D3,-20.75
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,96,D4,-22.717
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,120,D5,-23.106
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,144,D6,-21.045
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,168,D7,-17.521
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,192,D8,-13.894
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,216,D9,-11.703
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,240,D10,-10.302
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,24,D1,-14.303
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,48,D2,-15.748
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,72,D3,-17.551
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,96,D4,-19.122
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,120,D5,-17.562
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,144,D6,-16.263
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,168,D7,-12.842
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,192,D8,-11.289
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,216,D9,-9.754
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,240,D10,-7.83
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,24,D1,-8.9
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,48,D2,-9.705
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,72,D3,-11.228
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,96,D4,-12.664
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,120,D5,-12.813
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,144,D6,-11.582
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,168,D7,-9.887
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,192,D8,-8.255
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,216,D9,-6.895
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,240,D10,-5.67
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,24,D1,-2.481
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,48,D2,-3.953
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,72,D3,-5.883
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,96,D4,-8.118
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,120,D5,-9.859
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,144,D6,-10.135
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,168,D7,-9.096
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,192,D8,-9.308
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,216,D9,-9.427
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,240,D10,-8.168
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,24,D1,-1.933
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,48,D2,-3.609
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,72,D3,-5.828
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,96,D4,-8.143
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,120,D5,-10.345
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,144,D6,-10.85
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,168,D7,-9.777
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,192,D8,-8.839
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,216,D9,-8.131
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,240,D10,-7.412
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,2m_temperature,2m_temperature,,24,D1,-6.994
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,2m_temperature,2m_temperature,,48,D2,-7.668
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,2m_temperature,2m_temperature,,72,D3,-8.508
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,2m_temperature,2m_temperature,,96,D4,-9.609
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,2m_temperature,2m_temperature,,120,D5,-10.867
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,2m_temperature,2m_temperature,,144,D6,-11.698
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,2m_temperature,2m_temperature,,168,D7,-11.396
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,2m_temperature,2m_temperature,,192,D8,-10.338
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,2m_temperature,2m_temperature,,216,D9,-8.888
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,2m_temperature,2m_temperature,,240,D10,-8.064
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,24,D1,0.692
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,48,D2,-0.229
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,72,D3,-1.486
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,96,D4,-2.971
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,120,D5,-4.116
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,144,D6,-4.521
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,168,D7,-4.613
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,192,D8,-4.748
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,216,D9,-4.422
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,global,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,240,D10,-4.344
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,24,D1,-1.296
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,48,D2,-4.222
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,72,D3,-9.125
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,96,D4,-14.469
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,120,D5,-18.377
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,144,D6,-19.959
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,168,D7,-18.962
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,192,D8,-15.102
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,216,D9,-12.226
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,240,D10,-10.751
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,24,D1,-2.77
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,48,D2,-5.815
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,72,D3,-10.49
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,96,D4,-14.875
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,120,D5,-17.965
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,144,D6,-18.988
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,168,D7,-17.399
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,192,D8,-14.696
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,216,D9,-11.711
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,240,D10,-10.151
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,24,D1,-9.584
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,48,D2,-15.098
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,72,D3,-21.896
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,96,D4,-27.583
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,120,D5,-29.126
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,144,D6,-26.057
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,168,D7,-21.197
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,192,D8,-18.438
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,216,D9,-13.678
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,240,D10,-10.643
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,24,D1,-13.405
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,48,D2,-17.843
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,72,D3,-22.773
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,96,D4,-25.65
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,120,D5,-26.975
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,144,D6,-25.663
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,168,D7,-21.468
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,192,D8,-16.905
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,216,D9,-13.493
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,240,D10,-11.87
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,24,D1,-14.416
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,48,D2,-17.299
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,72,D3,-19.913
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,96,D4,-22.03
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,120,D5,-21.816
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,144,D6,-20.783
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,168,D7,-17.545
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,192,D8,-14.723
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,216,D9,-12.404
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,240,D10,-10.395
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,24,D1,-9.365
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,48,D2,-11.748
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,72,D3,-14.746
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,96,D4,-17.134
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,120,D5,-16.857
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,144,D6,-16.095
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,168,D7,-13.737
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,192,D8,-12.36
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,216,D9,-9.89
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,240,D10,-8.145
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,24,D1,-13.775
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,48,D2,-18.656
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,72,D3,-24.329
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,96,D4,-27.618
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,120,D5,-26.163
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,144,D6,-23.762
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,168,D7,-19.196
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,192,D8,-14.238
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,216,D9,-10.71
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,240,D10,-10.449
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,24,D1,-14.973
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,48,D2,-18.25
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,72,D3,-22.172
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,96,D4,-24.12
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,120,D5,-21.574
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,144,D6,-20.612
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,168,D7,-16.126
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,192,D8,-12.796
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,216,D9,-9.822
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,240,D10,-8.982
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,24,D1,-9.328
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,48,D2,-11.962
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,72,D3,-14.853
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,96,D4,-18.374
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,120,D5,-17.67
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,144,D6,-14.94
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,168,D7,-13.716
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,192,D8,-10.509
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,216,D9,-7.847
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,240,D10,-7.365
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,24,D1,-6.378
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,48,D2,-11.405
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,72,D3,-16.594
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,96,D4,-19.096
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,120,D5,-19.128
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,144,D6,-17.456
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,168,D7,-15.262
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,192,D8,-12.883
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,216,D9,-10.576
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,240,D10,-9.369
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,24,D1,-7.305
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,48,D2,-11.42
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,72,D3,-16.483
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,96,D4,-20.487
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,120,D5,-22.217
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,144,D6,-21.024
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,168,D7,-19.181
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,192,D8,-14.866
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,216,D9,-11.469
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,240,D10,-9.917
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,24,D1,-10.604
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,48,D2,-13.434
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,72,D3,-17.381
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,96,D4,-22.216
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,120,D5,-23.464
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,144,D6,-21.908
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,168,D7,-19.952
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,192,D8,-16.212
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,216,D9,-12.605
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,240,D10,-10.804
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,24,D1,-0.995
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,48,D2,-1.498
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,72,D3,-1.687
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,96,D4,-2.137
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,120,D5,-2.003
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,144,D6,-2.142
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,168,D7,-2.735
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,192,D8,-2.258
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,216,D9,-2.027
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,240,D10,-2.397
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,24,D1,-6.879
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,48,D2,-8.315
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,72,D3,-9.967
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,96,D4,-11.799
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,120,D5,-12.015
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,144,D6,-12.699
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,168,D7,-11.843
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,192,D8,-9.735
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,216,D9,-8.551
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,240,D10,-8.406
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,24,D1,-8.065
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,48,D2,-9.217
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,72,D3,-10.291
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,96,D4,-12.056
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,120,D5,-12.433
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,144,D6,-12.86
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,168,D7,-11.373
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,192,D8,-10.253
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,216,D9,-8.653
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,240,D10,-7.469
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,24,D1,-13.318
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,48,D2,-17.589
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,72,D3,-21.795
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,96,D4,-23.565
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,120,D5,-23.767
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,144,D6,-21.556
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,168,D7,-17.477
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,192,D8,-13.567
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,216,D9,-11.351
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,240,D10,-9.904
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,24,D1,-14.691
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,48,D2,-16.336
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,72,D3,-18.561
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,96,D4,-20.398
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,120,D5,-18.438
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,144,D6,-16.827
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,168,D7,-13.037
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,192,D8,-11.261
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,216,D9,-9.726
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,240,D10,-7.824
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,24,D1,-7.953
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,48,D2,-9.092
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,72,D3,-10.828
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,96,D4,-12.63
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,120,D5,-12.876
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,144,D6,-11.269
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,168,D7,-9.632
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,192,D8,-7.778
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,216,D9,-6.215
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,240,D10,-5.241
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,24,D1,-2.129
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,48,D2,-4.247
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,72,D3,-6.805
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,96,D4,-9.914
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,120,D5,-12.166
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,144,D6,-12.147
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,168,D7,-10.468
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,192,D8,-10.626
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,216,D9,-10.471
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,240,D10,-8.908
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,24,D1,-1.839
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,48,D2,-4.097
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,72,D3,-6.882
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,96,D4,-9.668
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,120,D5,-12.202
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,144,D6,-12.359
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,168,D7,-10.673
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,192,D8,-9.391
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,216,D9,-8.592
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,240,D10,-7.769
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,24,D1,-6.325
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,48,D2,-7.17
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,72,D3,-8.193
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,96,D4,-9.504
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,120,D5,-11.013
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,144,D6,-11.854
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,168,D7,-11.424
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,192,D8,-10.113
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,216,D9,-8.404
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,240,D10,-7.566
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,24,D1,1.951
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,48,D2,0.552
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,72,D3,-1.205
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,96,D4,-3.415
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,120,D5,-5.006
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,144,D6,-5.427
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,168,D7,-5.484
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,192,D8,-5.751
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,216,D9,-5.078
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,northern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,240,D10,-5.057
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,24,D1,-14.227
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,48,D2,-17.957
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,72,D3,-21.549
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,96,D4,-24.432
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,120,D5,-26.524
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,144,D6,-23.69
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,168,D7,-20.402
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,192,D8,-18.847
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,216,D9,-16.165
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,240,D10,-12.506
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,24,D1,-15.195
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,48,D2,-18.602
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,72,D3,-22.069
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,96,D4,-22.142
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,120,D5,-22.114
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,144,D6,-22.139
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,168,D7,-16.873
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,192,D8,-15.958
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,216,D9,-13.189
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,240,D10,-11.267
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,24,D1,-15.902
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,48,D2,-19.868
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,72,D3,-22.217
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,96,D4,-23.874
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,120,D5,-22.891
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,144,D6,-20.684
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,168,D7,-17.17
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,192,D8,-16.31
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,216,D9,-13.422
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,240,D10,-12.382
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,24,D1,-17.489
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,48,D2,-23.25
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,72,D3,-25.191
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,96,D4,-24.874
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,120,D5,-30.389
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,144,D6,-25.914
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,168,D7,-22.418
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,192,D8,-19.894
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,216,D9,-16.378
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,240,D10,-16.642
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,24,D1,-20.732
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,48,D2,-23.098
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,72,D3,-18.585
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,96,D4,-20.037
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,120,D5,-16.927
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,144,D6,-18.478
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,168,D7,-14.095
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,192,D8,-15.014
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,216,D9,-12.001
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,240,D10,-11.674
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,24,D1,-10.795
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,48,D2,-11.334
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,72,D3,-14.352
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,96,D4,-16.003
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,120,D5,-16.98
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,144,D6,-16.826
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,168,D7,-12.524
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,192,D8,-11.808
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,216,D9,-10.073
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,240,D10,-5.795
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,24,D1,-17.226
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,48,D2,-21.611
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,72,D3,-27.206
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,96,D4,-23.81
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,120,D5,-23.869
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,144,D6,-25.913
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,168,D7,-26.225
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,192,D8,-21.951
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,216,D9,-14.388
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,240,D10,-8.52
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,24,D1,-19.99
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,48,D2,-17.293
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,72,D3,-20.083
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,96,D4,-16.294
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,120,D5,-17.304
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,144,D6,-18.797
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,168,D7,-16.905
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,192,D8,-13.229
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,216,D9,-8.418
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,240,D10,-5.657
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,24,D1,-15.319
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,48,D2,-15.434
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,72,D3,-17.902
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,96,D4,-16.55
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,120,D5,-15.291
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,144,D6,-18.296
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,168,D7,-15.686
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,192,D8,-11.004
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,216,D9,-8.571
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,240,D10,-7.849
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,24,D1,-17.431
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,48,D2,-23.104
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,72,D3,-25.452
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,96,D4,-22.423
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,120,D5,-20.423
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,144,D6,-22.756
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,168,D7,-17.556
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,192,D8,-13.951
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,216,D9,-11.279
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 250,250,240,D10,-10.027
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,24,D1,-18.643
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,48,D2,-20.999
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,72,D3,-24.213
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,96,D4,-22.0
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,120,D5,-20.166
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,144,D6,-19.581
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,168,D7,-16.503
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,192,D8,-13.827
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,216,D9,-12.982
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 500,500,240,D10,-8.701
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,24,D1,-13.749
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,48,D2,-19.03
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,72,D3,-22.407
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,96,D4,-20.913
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,120,D5,-20.936
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,144,D6,-23.744
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,168,D7,-21.386
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,192,D8,-20.154
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,216,D9,-16.938
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,temperature,temperature,temperature 850,850,240,D10,-12.347
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,24,D1,-11.21
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,48,D2,-7.237
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,72,D3,-6.369
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,96,D4,-7.716
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,120,D5,-9.351
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,144,D6,-14.542
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,168,D7,-12.277
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,192,D8,-14.193
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,216,D9,-13.059
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,240,D10,-6.938
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,24,D1,-10.903
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,48,D2,-9.684
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,72,D3,-12.767
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,96,D4,-14.555
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,120,D5,-16.287
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,144,D6,-14.829
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,168,D7,-20.658
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,192,D8,-21.051
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,216,D9,-17.042
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,240,D10,-7.755
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,24,D1,-18.559
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,48,D2,-15.333
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,72,D3,-13.79
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,96,D4,-12.488
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,120,D5,-13.954
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,144,D6,-15.945
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,168,D7,-17.39
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,192,D8,-12.769
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,216,D9,-13.42
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,240,D10,-7.162
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,24,D1,-18.881
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,48,D2,-22.107
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,72,D3,-25.229
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,96,D4,-24.472
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,120,D5,-25.465
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,144,D6,-22.31
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,168,D7,-21.081
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,192,D8,-19.066
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,216,D9,-14.777
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,240,D10,-14.299
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,24,D1,-22.315
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,48,D2,-22.788
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,72,D3,-19.593
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,96,D4,-16.671
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,120,D5,-15.986
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,144,D6,-15.582
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,168,D7,-11.334
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,192,D8,-11.719
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,216,D9,-9.781
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,240,D10,-8.001
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,24,D1,-15.832
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,48,D2,-15.858
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,72,D3,-19.661
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,96,D4,-17.135
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,120,D5,-14.939
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,144,D6,-15.33
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,168,D7,-11.983
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,192,D8,-9.94
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,216,D9,-9.704
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,240,D10,-4.319
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,24,D1,-1.678
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,48,D2,-2.058
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,72,D3,-3.143
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,96,D4,-3.843
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,120,D5,-4.356
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,144,D6,-5.48
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,168,D7,-5.381
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,192,D8,-5.953
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,216,D9,-5.765
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,240,D10,-4.821
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,24,D1,-2.201
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,48,D2,-2.689
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,72,D3,-3.771
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,96,D4,-4.876
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,120,D5,-5.955
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,144,D6,-7.151
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,168,D7,-7.706
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,192,D8,-7.891
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,216,D9,-7.03
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,240,D10,-6.477
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,24,D1,-11.486
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,48,D2,-11.638
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,72,D3,-12.194
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,96,D4,-12.774
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,120,D5,-13.375
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,144,D6,-14.658
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,168,D7,-13.91
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,192,D8,-13.746
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,216,D9,-13.376
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,2m_temperature,2m_temperature,,240,D10,-12.306
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,24,D1,-0.406
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,48,D2,-0.547
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,72,D3,-1.178
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,96,D4,-1.488
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,120,D5,-1.885
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,144,D6,-2.307
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,168,D7,-2.323
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,192,D8,-2.374
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,216,D9,-2.378
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,southern_hemisphere,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,240,D10,-2.231
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,24,D1,-12.292
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,48,D2,-25.451
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,72,D3,-35.335
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,96,D4,-38.395
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,120,D5,-37.939
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,144,D6,-32.056
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,168,D7,-27.886
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,192,D8,-21.789
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,216,D9,-17.376
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 250,250,240,D10,-16.131
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,24,D1,-14.171
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,48,D2,-22.359
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,72,D3,-27.984
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,96,D4,-32.34
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,120,D5,-33.433
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,144,D6,-28.327
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,168,D7,-24.171
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,192,D8,-21.074
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,216,D9,-17.88
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 500,500,240,D10,-17.392
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,24,D1,-9.501
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,48,D2,-15.439
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,72,D3,-22.025
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,96,D4,-30.09
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,120,D5,-30.774
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,144,D6,-26.297
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,168,D7,-21.144
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,192,D8,-21.575
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,216,D9,-16.613
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,geopotential_height,geopotential_height,geopotential_height 850,850,240,D10,-17.077
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,24,D1,-12.232
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,48,D2,-15.799
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,72,D3,-21.522
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,96,D4,-23.8
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,120,D5,-27.674
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,144,D6,-25.884
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,168,D7,-22.626
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,192,D8,-20.9
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,216,D9,-15.271
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 250,250,240,D10,-14.475
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,24,D1,-14.497
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,48,D2,-16.443
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,72,D3,-19.419
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,96,D4,-20.77
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,120,D5,-23.251
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,144,D6,-20.078
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,168,D7,-18.068
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,192,D8,-17.915
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,216,D9,-14.06
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 500,500,240,D10,-12.406
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,24,D1,-11.33
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,48,D2,-14.062
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,72,D3,-17.261
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,96,D4,-20.269
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,120,D5,-20.693
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,144,D6,-18.124
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,168,D7,-15.59
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,192,D8,-15.431
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,216,D9,-11.462
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,zonal_wind,zonal_wind,zonal_wind 850,850,240,D10,-7.593
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,24,D1,-11.57
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,48,D2,-16.606
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,72,D3,-23.973
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,96,D4,-28.544
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,120,D5,-25.457
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,144,D6,-22.717
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,168,D7,-21.005
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,192,D8,-17.639
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,216,D9,-15.964
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 250,250,240,D10,-14.477
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,24,D1,-13.007
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,48,D2,-16.287
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,72,D3,-20.849
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,96,D4,-23.141
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,120,D5,-22.048
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,144,D6,-20.316
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,168,D7,-16.998
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,192,D8,-15.084
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,216,D9,-14.925
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 500,500,240,D10,-13.26
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,24,D1,-10.756
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,48,D2,-15.258
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,72,D3,-17.308
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,96,D4,-21.179
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,120,D5,-21.365
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,144,D6,-17.364
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,168,D7,-15.126
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,192,D8,-12.332
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,216,D9,-10.664
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,meridional_wind,meridional_wind,meridional_wind 850,850,240,D10,-8.98
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 250,250,24,D1,-13.716
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 250,250,48,D2,-19.882
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 250,250,72,D3,-24.682
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 250,250,96,D4,-26.219
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 250,250,120,D5,-26.564
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 250,250,144,D6,-22.859
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 250,250,168,D7,-19.564
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 250,250,192,D8,-20.881
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 250,250,216,D9,-15.779
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 250,250,240,D10,-14.904
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 500,500,24,D1,-14.929
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 500,500,48,D2,-19.82
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 500,500,72,D3,-23.796
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 500,500,96,D4,-26.385
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 500,500,120,D5,-28.858
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 500,500,144,D6,-26.23
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 500,500,168,D7,-21.615
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 500,500,192,D8,-18.558
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 500,500,216,D9,-15.142
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 500,500,240,D10,-11.634
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 850,850,24,D1,-15.389
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 850,850,48,D2,-17.856
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 850,850,72,D3,-20.895
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 850,850,96,D4,-27.665
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 850,850,120,D5,-30.978
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 850,850,144,D6,-25.465
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 850,850,168,D7,-22.518
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 850,850,192,D8,-18.151
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 850,850,216,D9,-14.794
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,temperature,temperature,temperature 850,850,240,D10,-14.502
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,24,D1,-7.305
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,48,D2,-8.091
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,72,D3,-8.895
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,96,D4,-10.148
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,120,D5,-9.295
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,144,D6,-8.311
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,168,D7,-7.597
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,192,D8,-6.613
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,216,D9,-5.495
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 250,250,240,D10,-4.109
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,24,D1,-7.717
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,48,D2,-8.685
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,72,D3,-9.319
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,96,D4,-11.358
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,120,D5,-13.034
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,144,D6,-12.503
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,168,D7,-12.074
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,192,D8,-8.542
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,216,D9,-8.844
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 500,500,240,D10,-8.114
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,24,D1,-9.256
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,48,D2,-11.016
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,72,D3,-11.039
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,96,D4,-13.951
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,120,D5,-15.965
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,144,D6,-14.092
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,168,D7,-12.011
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,192,D8,-9.943
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,216,D9,-9.113
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,specific_humidity,specific_humidity,specific_humidity 850,850,240,D10,-9.201
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,24,D1,-12.442
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,48,D2,-15.489
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,72,D3,-21.772
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,96,D4,-24.267
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,120,D5,-25.529
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,144,D6,-20.085
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,168,D7,-18.682
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,192,D8,-18.318
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,216,D9,-14.035
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 250,250,240,D10,-12.434
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,24,D1,-14.927
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,48,D2,-15.739
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,72,D3,-17.574
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,96,D4,-20.711
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,120,D5,-20.281
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,144,D6,-16.042
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,168,D7,-13.9
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,192,D8,-14.456
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,216,D9,-11.924
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 500,500,240,D10,-9.579
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,24,D1,-9.462
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,48,D2,-11.595
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,72,D3,-13.092
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,96,D4,-14.827
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,120,D5,-16.349
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,144,D6,-12.597
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,168,D7,-12.219
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,192,D8,-10.424
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,216,D9,-8.331
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,wind_speed,wind_speed,wind_speed 850,850,240,D10,-6.025
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,24,D1,3.968
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,48,D2,1.402
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,72,D3,-1.514
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,96,D4,-4.846
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,120,D5,-8.095
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,144,D6,-8.252
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,168,D7,-7.271
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,192,D8,-8.027
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,216,D9,-9.138
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_zonal_wind,10m_zonal_wind,,240,D10,-7.062
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,24,D1,4.043
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,48,D2,1.041
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,72,D3,-2.66
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,96,D4,-5.952
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,120,D5,-9.429
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,144,D6,-10.025
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,168,D7,-7.935
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,192,D8,-7.596
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,216,D9,-6.9
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_meridional_wind,10m_meridional_wind,,240,D10,-5.202
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,2m_temperature,2m_temperature,,24,D1,1.25
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,2m_temperature,2m_temperature,,48,D2,-2.313
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,2m_temperature,2m_temperature,,72,D3,-5.685
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,2m_temperature,2m_temperature,,96,D4,-9.206
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,2m_temperature,2m_temperature,,120,D5,-12.999
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,2m_temperature,2m_temperature,,144,D6,-14.664
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,2m_temperature,2m_temperature,,168,D7,-13.43
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,2m_temperature,2m_temperature,,192,D8,-11.997
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,2m_temperature,2m_temperature,,216,D9,-9.562
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,2m_temperature,2m_temperature,,240,D10,-9.517
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,24,D1,10.721
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,48,D2,9.035
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,72,D3,7.043
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,96,D4,4.587
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,120,D5,2.375
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,144,D6,1.427
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,168,D7,0.335
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,192,D8,-0.836
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,216,D9,-0.385
+nested_global_vs_aifs_regions,Nested-EAGLE-Global (AI),AIFS,conus,global 0.25 degree,surface,10m_wind_speed,10m_wind_speed,,240,D10,0.324

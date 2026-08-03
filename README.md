@@ -10,14 +10,14 @@ python -m pip install -r requirements.txt
 ./run_all_scorecards.sh
 ```
 
-That one command runs the legacy comparison plots and then the
-configured performance heatmaps and violin plots. Generated plots and CSVs are
-written to `outputs/`, which is ignored by Git.
+That one command runs the complete scorecard suite and writes plots/CSVs to
+`outputs/`. The verified reference figures in `outputs/` are tracked in Git so
+the repository preserves the same figure formats generated locally.
 
-To run only the original comparison scorecards:
+To run only the config-driven comparison scorecards:
 
 ```bash
-python scripts/run_scorecard.py --config-dir config --comparison all --skip-performance-plots
+python scripts/run_scorecard.py --config-dir config --comparison all
 ```
 
 The heatmap and violin scripts can still be run directly when you want to debug
@@ -55,13 +55,12 @@ The repository includes a tiny synthetic fixture at:
 sample_data/aligned_20250225_20251231
 ```
 
-`config/models.yaml` points to this fixture by default so the config-driven
-runner works in a fresh checkout. The sample NetCDF values are only for smoke
-testing and are not meteorological verification results.
+The repository keeps lightweight data documentation only. Put aligned NetCDF
+input data under `data/new_data`, or point the runner at another location with
+`SCORECARD_SYSTEM_DATA_DIR=/path/to/aligned_20250225_20251231`.
 
 ## Production Data
 
-For real runs, update `data_base` in `config/models.yaml` to point at the
-production aligned NetCDF directory. Also update `input_path` in
-`config/performance_heatmap.yaml` and `config/performance_violin.yaml` when
-using the standalone heatmap and violin plot scripts.
+For real runs, set `SCORECARD_SYSTEM_DATA_DIR` to the production aligned NetCDF
+directory. The YAML files control the comparisons, date filters, lead-time
+filters, model selections, variable selections, and output names.

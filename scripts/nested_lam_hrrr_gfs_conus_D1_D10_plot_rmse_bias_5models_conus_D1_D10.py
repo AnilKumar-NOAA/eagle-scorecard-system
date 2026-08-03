@@ -9,12 +9,24 @@ import xarray as xr
 import matplotlib.pyplot as plt
 
 
-SYSTEM_BASE = Path("/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system")
-DATA_BASE = Path(os.environ.get("SCORECARD_SYSTEM_DATA_DIR", SYSTEM_BASE / "data"))
+DERIVED_SURFACE_SKIP_VARS = {"surface_pressure", "2m_specific_humidity"}
+DERIVED_SURFACE_SKIP_MODEL_TOKENS = ("AIGFS", "AIFS")
+
+def skip_aigfs_aifs_derived_surface(model_name, varname, level=None):
+    return (
+        level is None
+        and varname in DERIVED_SURFACE_SKIP_VARS
+        and any(token in str(model_name) for token in DERIVED_SURFACE_SKIP_MODEL_TOKENS)
+    )
+
+
+
+SYSTEM_BASE = Path(__file__).resolve().parents[1]
+DATA_BASE = Path(os.environ.get("SCORECARD_SYSTEM_DATA_DIR", SYSTEM_BASE / "data/new_data"))
 OUTPUT_DIR = Path(os.environ.get("SCORECARD_SYSTEM_OUTPUT_DIR", SYSTEM_BASE / "outputs"))
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-FHRS = list(range(24, 241, 6))
+FHRS = list(range(24, 241, 24))
 XTICK_FHRS = list(range(24, 241, 24))
 XTICK_LABELS = [f"D{int(f/24)}" for f in XTICK_FHRS]
 
@@ -25,7 +37,7 @@ MODEL_COLORS = {
     "HRRR": "#ff7f0e",              # orange
     "GFS": "#000000",               # black
     "AIGFS": "#2ca02c",             # green
-    "ECMWF IFS": "#d62728",         # red
+    "AIFS": "#d62728",         # red
 }
 
 MODEL_LABELS = {
@@ -33,43 +45,42 @@ MODEL_LABELS = {
     "HRRR": "HRRR (~6 km)",
     "GFS": "GFS CONUS (0.25 deg)",
     "AIGFS": "AIGFS CONUS (0.25 deg)",
-    "ECMWF IFS": "ECMWF-IFS CONUS (0.25 deg)",
+    "AIFS": "AIFS CONUS (0.25 deg)",
 }
 
 MODELS = {
     "Nested-EAGLE-LAM": {
         "dir": DATA_BASE / "nested_eagle_lam_2025",
         "patterns": [
-            "{metric}.convobs.nested-lam.2025-*_to_2025-*.nc",
-            "{metric}.convobs.nested_lam.2025-*_to_2025-*.nc",
+            "{metric}.convobs.nested-lam.nc",
         ],
     },
     "HRRR": {
         "dir": DATA_BASE / "hrrr_2025",
         "patterns": [
-            "{metric}.convobs.lam*.2025-*_to_2025-*.nc",
-            "{metric}.convobs.hrrr*.2025-*_to_2025-*.nc",
+            "{metric}.convobs.lam.nc",
+            "{metric}.convobs.lam.nc",
         ],
     },
     "GFS": {
-        "dir": DATA_BASE / "gfs_zarr_2025",
+        "dir": DATA_BASE / "gfs_2025",
         "patterns": [
-            "{metric}.convobs.global.conus.2025-*_to_2025-*.nc",
-            "{metric}.convobs.global.2025-*_to_2025-*.nc",
+            "{metric}.convobs.global.conus.nc",
+            "{metric}.convobs.global.conus.nc",
         ],
     },
     "AIGFS": {
         "dir": DATA_BASE / "aigfs_2025",
         "patterns": [
-            "{metric}.convobs.global.conus.2025-*_to_2025-*.nc",
-            "{metric}.convobs.global.2025-*_to_2025-*.nc",
+            "{metric}.convobs.global.conus.nc",
+            "{metric}.convobs.global.conus.nc",
         ],
     },
-    "ECMWF IFS": {
-        "dir": DATA_BASE / "ecmwf_ifs_2025",
+    "AIFS": {
+        "dir": DATA_BASE / "aifs_2025",
         "patterns": [
-            "{metric}.convobs.global.conus.2025-*_to_2025-*.nc",
-            "{metric}.convobs.global.2025-*_to_2025-*.nc",
+            "{metric}.convobs.global.conus.nc",
+            "{metric}.convobs.global.conus.nc",
         ],
     },
 }
@@ -202,6 +213,10 @@ def scale_values(var_key, values):
 
 
 def read_series(model_name, metric, var_key, level):
+    if skip_aigfs_aifs_derived_surface(model_name, var_key, level):
+        print(f"{metric.upper():4s} | {model_name:30s} | {var_key:24s} | skipped derived surface field")
+        return np.full(len(FHRS), np.nan)
+
     model_info = MODELS[model_name]
     files = get_files(model_info, metric)
 
@@ -320,6 +335,9 @@ def plot_rows(metric, rows, output_name, title, ncols=3):
             data_by_model[model_name] = read_series(model_name, metric, var_key, level)
 
         for model_name, vals in data_by_model.items():
+            if not np.isfinite(vals).any():
+                continue
+
             ax.plot(
                 x,
                 vals,
@@ -442,7 +460,7 @@ def plot_upper_exact_layout(metric, output_name, title):
     fig.text(
         0.5,
         0.948,
-        "Nested-EAGLE LAM and HRRR are ~6 km; GFS, AIGFS, and ECMWF IFS are CONUS-subset global models | 6-hourly D1-D10",
+        "Nested-EAGLE LAM and HRRR are ~6 km; GFS, AIGFS, and AIFS are CONUS-subset global models | 6-hourly D1-D10",
         ha="center",
         fontsize=12,
     )
@@ -463,28 +481,28 @@ def main():
     plot_rows(
         metric="rmse",
         rows=SURFACE_ROWS,
-        output_name="rmse_surface_conus_nested_lam_hrrr_gfs_aigfs_ecmwf_D1_D10_6hourly.png",
-        title="Surface RMSE: Nested-EAGLE-LAM, HRRR, GFS, AIGFS, and ECMWF IFS",
+        output_name="rmse_surface_conus_nested_lam_hrrr_gfs_aigfs_aifs_D1_D10_6hourly.png",
+        title="Surface RMSE: Nested-EAGLE-LAM, HRRR, GFS, AIGFS, and AIFS",
         ncols=3,
     )
 
     plot_rows(
         metric="bias",
         rows=SURFACE_ROWS,
-        output_name="bias_surface_conus_nested_lam_hrrr_gfs_aigfs_ecmwf_D1_D10_6hourly.png",
-        title="Surface Bias: Nested-EAGLE-LAM, HRRR, GFS, AIGFS, and ECMWF IFS",
+        output_name="bias_surface_conus_nested_lam_hrrr_gfs_aigfs_aifs_D1_D10_6hourly.png",
+        title="Surface Bias: Nested-EAGLE-LAM, HRRR, GFS, AIGFS, and AIFS",
         ncols=3,
     )
 
     plot_upper_exact_layout(
         metric="rmse",
-        output_name="rmse_upper_conus_nested_lam_hrrr_gfs_aigfs_ecmwf_D1_D10_250_500_850_6hourly.png",
+        output_name="rmse_upper_conus_nested_lam_hrrr_gfs_aigfs_aifs_D1_D10_250_500_850_6hourly.png",
         title="Upper-Air RMSE vs Conventional Obs",
     )
 
     plot_upper_exact_layout(
         metric="bias",
-        output_name="bias_upper_conus_nested_lam_hrrr_gfs_aigfs_ecmwf_D1_D10_250_500_850_6hourly.png",
+        output_name="bias_upper_conus_nested_lam_hrrr_gfs_aigfs_aifs_D1_D10_250_500_850_6hourly.png",
         title="Upper-Air Bias vs Conventional Obs",
     )
 

@@ -201,7 +201,12 @@ def _expand_paths(value: Any) -> Any:
 
 
 def get_output_path(config: dict[str, Any], plot_config: dict[str, Any]) -> Path:
-    output_path = Path(plot_config.get("output_path", config.get("output_path", "outputs")))
+    output_path = Path(
+        os.environ.get(
+            "SCORECARD_SYSTEM_OUTPUT_DIR",
+            plot_config.get("output_path", config.get("output_path", "outputs")),
+        )
+    )
     output_path.mkdir(parents=True, exist_ok=True)
     return output_path
 
@@ -211,7 +216,12 @@ def get_model_path(config: dict[str, Any], model_key: str) -> Path:
     if "path" in info:
         return Path(info["path"])
 
-    input_path = Path(config.get("input_path", config.get("data_base")))
+    input_path = Path(
+        os.environ.get(
+            "SCORECARD_SYSTEM_DATA_DIR",
+            config.get("input_path", config.get("data_base")),
+        )
+    )
     subdir = info.get("subdir", info.get("directory", model_key))
     return input_path / subdir
 

@@ -1,0 +1,5 @@
+output_dir: outputs
+log_dir: logs
+image_format: png
+dpi: 200
+flat_outputs: true

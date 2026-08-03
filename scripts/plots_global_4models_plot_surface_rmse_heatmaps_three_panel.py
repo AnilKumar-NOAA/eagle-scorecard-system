@@ -5,7 +5,7 @@ Create one 3-panel surface RMSE improvement heatmap figure.
 Comparisons:
   1) Nested-EAGLE vs GFS
   2) Nested-EAGLE vs AIGFS
-  3) Nested-EAGLE vs ECMWF IFS
+  3) Nested-EAGLE vs AIFS
 
 Each heatmap panel is kept close to 5 inch x 5 inch.
 
@@ -31,35 +31,44 @@ import matplotlib.pyplot as plt
 # ----------------------------------------------------------------------
 import os as _scorecard_os
 from pathlib import Path as _scorecard_Path
+SCORECARD_SYSTEM_DATA_DIR = _scorecard_Path(_scorecard_os.environ.get(
+    "SCORECARD_SYSTEM_DATA_DIR",
+    str(Path(__file__).resolve().parents[1] / "data/new_data")
+))
 SCORECARD_SYSTEM_OUTPUT_DIR = _scorecard_Path(_scorecard_os.environ.get(
     "SCORECARD_SYSTEM_OUTPUT_DIR",
-    "/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/data_system/outputs"
+    str(Path(__file__).resolve().parents[1] / "outputs")
 ))
 SCORECARD_SYSTEM_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
+# ============================================================
+# Paths
+# ============================================================
+
+BASE = Path(__import__("os").environ.get("SCORECARD_SYSTEM_DATA_DIR", Path(__file__).resolve().parents[1] / "data/new_data"))
+OUTDIR = SCORECARD_SYSTEM_OUTPUT_DIR
+OUTDIR.mkdir(parents=True, exist_ok=True)
 
 # ============================================================
 # User settings
 # ============================================================
 
-HERE = Path(__file__).resolve().parent
-SCORECARD_DIR = HERE.parent
+#HERE = Path(__file__).resolve().parent
+#SCORECARD_DIR = HERE.parent
 
 MODEL_DIRS = {
-    "Nested-EAGLE": SCORECARD_DIR / "nested_eagle_2025",
-    "GFS": SCORECARD_DIR / "gfs_zarr_2025",
-    "AIGFS": SCORECARD_DIR / "aigfs_2025",
-    "ECMWF IFS": SCORECARD_DIR / "ecmwf_ifs_2025",
+    "Nested-EAGLE": BASE / "nested_eagle_global_2025",
+    "GFS": BASE / "gfs_2025",
+    "AIGFS": BASE / "aigfs_2025",
+    "AIFS": BASE / "aifs_2025",
 }
 
 SURFACE_VARS = [
     "2m_temperature",
-    "surface_pressure",
     "10m_zonal_wind",
     "10m_meridional_wind",
     "10m_wind_speed",
-    "2m_specific_humidity",
 ]
 
 VAR_LABELS = {
@@ -71,15 +80,15 @@ VAR_LABELS = {
     "2m_specific_humidity": "Q2M",
 }
 
-BASELINES = ["GFS", "AIGFS", "ECMWF IFS"]
+BASELINES = ["GFS", "AIGFS", "AIFS"]
 
 METRIC = "rmse"
 
 # Fixed color scale for all three panels
-VMIN = -20.0
-VMAX = 20.0
+VMIN = -30.0
+VMAX = 30.0
 
-OUTPUT_FIG = HERE / "surface_rmse_improvement_heatmaps_3panel.png"
+OUTPUT_FIG = OUTDIR / "surface_rmse_improvement_heatmaps_3panel.png"
 
 DATE_RE = r"2025-\d{2}-\d{2}_to_2025-\d{2}-\d{2}"
 
@@ -93,10 +102,10 @@ def find_monthly_metric_files(model_name, metric="rmse"):
     Return only global monthly files.
 
     Nested-EAGLE:
-      rmse.convobs.nested-global.2025-...nc
+      rmse.convobs.nested-global...nc
 
     Other global models:
-      rmse.convobs.global.2025-...nc
+      rmse.convobs.global...nc
 
     This excludes regional files such as .conus, .europe, etc.
     """
@@ -107,13 +116,13 @@ def find_monthly_metric_files(model_name, metric="rmse"):
 
     files = []
 
-    for p in sorted(model_dir.glob(f"{metric}.convobs.*.2025-*_to_2025-*.nc")):
+    for p in sorted(model_dir.glob(f"{metric}.convobs*.nc")):
         name = p.name
 
         if model_name == "Nested-EAGLE":
-            pat = rf"^{metric}\.convobs\.nested-global\.{DATE_RE}\.nc$"
+            pat = rf"^{metric}\.convobs\.nested-global\.nc$"
         else:
-            pat = rf"^{metric}\.convobs\.global\.{DATE_RE}\.nc$"
+            pat = rf"^{metric}\.convobs\.global\.nc$"
 
         if re.match(pat, name):
             files.append(p)
@@ -307,7 +316,7 @@ def main():
     # Figure layout:
     #   top-left     : GFS
     #   top-right    : AIGFS
-    #   bottom-center: ECMWF IFS
+    #   bottom-center: AIFS
     #
     # Each heatmap is kept close to 5 x 5 inches.
     # ------------------------------------------------------------
@@ -404,7 +413,7 @@ def main():
     )
 
     cbar.set_label("RMSE improvement (%)", fontsize=11)
-    cbar.set_ticks([VMIN, VMIN / 2, 0, VMAX / 2, VMAX])
+    cbar.set_ticks([-30, -20, -10, 0, 10, 20, 30])
     cbar.ax.tick_params(labelsize=9)
 
     # Keep margins clean after manually centering the bottom panel.

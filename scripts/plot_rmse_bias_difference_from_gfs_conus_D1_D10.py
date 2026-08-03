@@ -6,12 +6,24 @@ import xarray as xr
 import matplotlib.pyplot as plt
 
 
-BASE = Path("/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system")
-DATA_BASE = BASE / "data"
-OUTDIR = BASE / "outputs"
+DERIVED_SURFACE_SKIP_VARS = {"surface_pressure", "2m_specific_humidity"}
+DERIVED_SURFACE_SKIP_MODEL_TOKENS = ("AIGFS", "AIFS")
+
+def skip_aigfs_aifs_derived_surface(model_name, varname, level=None):
+    return (
+        level is None
+        and varname in DERIVED_SURFACE_SKIP_VARS
+        and any(token in str(model_name) for token in DERIVED_SURFACE_SKIP_MODEL_TOKENS)
+    )
+
+
+
+BASE = Path(__file__).resolve().parents[1]
+DATA_BASE = Path(__import__("os").environ.get("SCORECARD_SYSTEM_DATA_DIR", BASE / "data/new_data"))
+OUTDIR = Path(__import__("os").environ.get("SCORECARD_SYSTEM_OUTPUT_DIR", BASE / "outputs"))
 OUTDIR.mkdir(parents=True, exist_ok=True)
 
-FHRS = np.arange(0, 241, 6)
+FHRS = np.arange(0, 241, 24)
 LEVELS = [250, 500, 850]
 METRICS = ["rmse", "bias"]
 
@@ -20,31 +32,31 @@ ANCHOR_MODEL = "GFS CONUS (0.25 deg)"
 MODELS = {
     "Nested-EAGLE LAM (~6 km)": {
         "dir": DATA_BASE / "nested_eagle_lam_2025",
-        "pattern": "{metric}.convobs.nested-lam.2025-*_to_2025-*.nc",
+        "pattern": "{metric}.convobs.nested-lam.nc",
         "color": "blue",
         "lw": 1.5,
     },
     "HRRR (~6 km)": {
         "dir": DATA_BASE / "hrrr_2025",
-        "pattern": "{metric}.convobs.lam*.2025-*_to_2025-*.nc",
+        "pattern": "{metric}.convobs.lam.nc",
         "color": "orange",
         "lw": 1.5,
     },
     "GFS CONUS (0.25 deg)": {
-        "dir": DATA_BASE / "gfs_zarr_2025",
-        "pattern": "{metric}.convobs.global*.2025-*_to_2025-*.nc",
+        "dir": DATA_BASE / "gfs_2025",
+        "pattern": "{metric}.convobs.global.conus.nc",
         "color": "black",
         "lw": 1.5,
     },
     "AIGFS CONUS (0.25 deg)": {
         "dir": DATA_BASE / "aigfs_2025",
-        "pattern": "{metric}.convobs.global*.2025-*_to_2025-*.nc",
+        "pattern": "{metric}.convobs.global.conus.nc",
         "color": "green",
         "lw": 1.5,
     },
-    "ECMWF IFS CONUS (0.25 deg)": {
-        "dir": DATA_BASE / "ecmwf_ifs_2025",
-        "pattern": "{metric}.convobs.global*.2025-*_to_2025-*.nc",
+    "AIFS CONUS (0.25 deg)": {
+        "dir": DATA_BASE / "aifs_2025",
+        "pattern": "{metric}.convobs.global.conus.nc",
         "color": "red",
         "lw": 1.5,
     },
@@ -54,7 +66,7 @@ MODEL_ORDER = [
     "Nested-EAGLE LAM (~6 km)",
     "HRRR (~6 km)",
     "AIGFS CONUS (0.25 deg)",
-    "ECMWF IFS CONUS (0.25 deg)",
+    "AIFS CONUS (0.25 deg)",
 ]
 
 SURFACE_VARS = [
@@ -128,6 +140,10 @@ def convert_units(varname, da):
 
 
 def load_model_series(metric, model_name, varname, levels=None):
+    if skip_aigfs_aifs_derived_surface(model_name, varname, levels):
+        print(f"{metric.upper():4s} | {model_name:30s} | {varname:24s} | skipped derived surface field")
+        return None
+
     info = MODELS[model_name]
     files = sorted(info["dir"].glob(info["pattern"].format(metric=metric)))
 

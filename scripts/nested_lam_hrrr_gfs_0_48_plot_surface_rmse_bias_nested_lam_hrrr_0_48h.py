@@ -11,13 +11,13 @@ import os as _scorecard_os
 from pathlib import Path as _scorecard_Path
 SCORECARD_SYSTEM_OUTPUT_DIR = _scorecard_Path(_scorecard_os.environ.get(
     "SCORECARD_SYSTEM_OUTPUT_DIR",
-    "/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/data_system/outputs"
+    str(Path(__file__).resolve().parents[1] / "outputs")
 ))
 SCORECARD_SYSTEM_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 
-BASE = Path("/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/data")
+BASE = Path(__import__("os").environ.get("SCORECARD_SYSTEM_DATA_DIR", Path(__file__).resolve().parents[1] / "data/new_data"))
 OUTDIR = SCORECARD_SYSTEM_OUTPUT_DIR
 OUTDIR.mkdir(parents=True, exist_ok=True)
 
@@ -32,13 +32,13 @@ FHRS = np.arange(0, 49, 6)
 MODELS = {
     "Nested-EAGLE LAM": {
         "dir": BASE / "nested_eagle_lam_2025",
-        "pattern": f"{METRIC}.convobs.nested-lam.2025-*_to_2025-*.nc",
+        "pattern": f"{METRIC}.convobs.nested-lam.nc",
         "color": "blue",
         "lw": 1.6,
     },
     "HRRR": {
         "dir": BASE / "hrrr_2025",
-        "pattern": f"{METRIC}.convobs.lam*.2025-*_to_2025-*.nc",
+        "pattern": f"{METRIC}.convobs.lam.nc",
         "color": "orange",
         "lw": 1.6,
     },

@@ -1,0 +1,4 @@
+plot,region,model,metric,value_type,count,mean,median,std,min,max
+all_response_conus_gfs_nested_hrrr_48h_rmse,conus,nested_eagle_lam,rmse,normalized_rmse_all_responses,55376,0.9701178712046072,0.8896908709870474,0.7922822354635634,6.976549066053764e-05,50.19086224269051
+all_response_conus_gfs_nested_hrrr_48h_rmse,conus,gfs,rmse,normalized_rmse_all_responses,55376,1.1368791310241837,1.0839048578119361,1.0542586040485693,6.352262605915822e-05,73.91374555717138
+all_response_conus_gfs_nested_hrrr_48h_rmse,conus,hrrr,rmse,normalized_rmse_all_responses,55376,1.1242065219942985,1.024195043362924,0.8775008353453841,0.00017294683904408345,49.87651773077691

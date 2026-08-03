@@ -3,7 +3,7 @@
 Global RMSE heatmaps showing Nested EAGLE improvement (%) versus:
   - GFS
   - AIGFS
-  - ECMWF IFS
+  - AIFS
 
 Only RMSE is plotted.
 
@@ -32,9 +32,13 @@ import matplotlib.pyplot as plt
 # ----------------------------------------------------------------------
 import os as _scorecard_os
 from pathlib import Path as _scorecard_Path
+SCORECARD_SYSTEM_DATA_DIR = _scorecard_Path(_scorecard_os.environ.get(
+    "SCORECARD_SYSTEM_DATA_DIR",
+    str(Path(__file__).resolve().parents[1] / "data/new_data")
+))
 SCORECARD_SYSTEM_OUTPUT_DIR = _scorecard_Path(_scorecard_os.environ.get(
     "SCORECARD_SYSTEM_OUTPUT_DIR",
-    "/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/data_system/outputs"
+    str(Path(__file__).resolve().parents[1] / "outputs")
 ))
 SCORECARD_SYSTEM_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -44,8 +48,10 @@ SCORECARD_SYSTEM_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 # Paths/settings
 # ============================================================
 
-SCORECARD_DIR = Path("/scratch3/NAGAPE/epic/role-epic/EAGLE/eagle_models_vv/scorecard_system/data")
+BASE = Path(__import__("os").environ.get("SCORECARD_SYSTEM_DATA_DIR", Path(__file__).resolve().parents[1] / "data/new_data"))
+SCORECARD_DIR = Path(__import__("os").environ.get("SCORECARD_SYSTEM_DATA_DIR", Path(__file__).resolve().parents[1] / "data/new_data"))
 OUTDIR = SCORECARD_SYSTEM_OUTPUT_DIR
+OUTDIR.mkdir(parents=True, exist_ok=True)
 
 METRIC = "rmse"
 
@@ -54,35 +60,34 @@ COLOR_PERCENTILE = 98
 
 # Same fixed symmetric color range for surface and upper heatmaps.
 # Units are percent improvement.
-HEATMAP_LIMIT = 15.0
+HEATMAP_LIMIT = 30.0
 
 # Data are 6-hourly through D10.
 FHR_WANTED = np.arange(0, 241, 6)
 
 MODEL_INFO = {
     "Nested EAGLE": {
-        "dir": SCORECARD_DIR / "nested_eagle_2025",
-        "pattern": "{metric}.convobs.nested-global.2025-*_to_2025-*.nc",
+        "dir": BASE / "nested_eagle_global_2025",
+        "pattern": "{metric}.convobs.nested-global.nc",
     },
     "GFS": {
-        "dir": SCORECARD_DIR / "gfs_zarr_2025",
-        "pattern": "{metric}.convobs.global.2025-*_to_2025-*.nc",
+        "dir": BASE / "gfs_2025",
+        "pattern": "{metric}.convobs.global.nc",
     },
     "AIGFS": {
-        "dir": SCORECARD_DIR / "aigfs_2025",
-        "pattern": "{metric}.convobs.global.2025-*_to_2025-*.nc",
+        "dir": BASE / "aigfs_2025",
+        "pattern": "{metric}.convobs.global.nc",
     },
-    "ECMWF IFS": {
-        "dir": SCORECARD_DIR / "ecmwf_ifs_2025",
-        "pattern": "{metric}.convobs.global.2025-*_to_2025-*.nc",
+    "AIFS": {
+        "dir": BASE / "aifs_2025",
+        "pattern": "{metric}.convobs.global.nc",
     },
 }
 
-COMPARE_MODELS = ["GFS", "AIGFS", "ECMWF IFS"]
+COMPARE_MODELS = ["GFS", "AIGFS", "AIFS"]
 
 SURFACE_VARS = [
     ("2m_temperature", "T2M"),
-    ("surface_pressure", "SP"),
     ("10m_zonal_wind", "U10"),
     ("10m_meridional_wind", "V10"),
     ("10m_wind_speed", "WS10"),

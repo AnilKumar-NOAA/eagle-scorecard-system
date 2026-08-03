@@ -3,8 +3,8 @@
 from pathlib import Path
 import argparse
 import csv
-import importlib
 import importlib.util
+import os
 import sys
 
 import numpy as np
@@ -20,6 +20,9 @@ except ImportError:
 
 FHR_CANDIDATES = ["fhr", "lead", "lead_time", "forecast_hour", "fhour"]
 LEVEL_CANDIDATES = ["level", "lev", "pressure", "pressure_level", "plev", "isobaricInhPa"]
+
+DERIVED_SURFACE_SKIP_VARS = {"surface_pressure", "2m_specific_humidity"}
+DERIVED_SURFACE_SKIP_MODEL_KEYS = {"aigfs", "aifs"}
 
 
 def load_yaml(path):
@@ -104,7 +107,7 @@ def build_rows(var_cfg):
 
 def model_files(model_cfg, model_key, region=None, comparison_type="regional"):
     model = model_cfg["models"][model_key]
-    data_base = Path(model_cfg["data_base"])
+    data_base = Path(os.environ.get("SCORECARD_SYSTEM_DATA_DIR", model_cfg["data_base"]))
     directory = data_base / model["directory"]
 
     patterns = []
@@ -220,6 +223,32 @@ def variable_group(label):
     if label.startswith("wind_speed"):
         return "wind_speed"
     return "surface"
+
+
+def recompute_group_breaks_from_rows(rows):
+    breaks = []
+    if not rows:
+        return breaks
+
+    last_group = variable_group(rows[0]["label"])
+    for i, row in enumerate(rows[1:], start=1):
+        group = variable_group(row["label"])
+        if group != last_group:
+            breaks.append(i - 0.5)
+            last_group = group
+
+    return breaks
+
+
+def filter_rows_for_derived_surface(rows, comparison):
+    target = comparison.get("target_model", "")
+    reference = comparison.get("reference_model", "")
+
+    if target not in DERIVED_SURFACE_SKIP_MODEL_KEYS and reference not in DERIVED_SURFACE_SKIP_MODEL_KEYS:
+        return rows, recompute_group_breaks_from_rows(rows)
+
+    kept = [row for row in rows if row.get("var") not in DERIVED_SURFACE_SKIP_VARS]
+    return kept, recompute_group_breaks_from_rows(kept)
 
 
 def choose_box_text_color(value, vmax):
@@ -347,7 +376,8 @@ def plot_regional(comparison, rows, group_breaks, matrices, outpng):
     cmap = plt.cm.RdBu.copy()
     cmap.set_bad("#f2f2f2")
 
-    vmax = float(comparison.get("color_limit", 15))
+    vmax = float(comparison.get("color_limit", 30))
+    print(f"DEBUG: {comparison['name']} color_limit={vmax}")
     vmin = -vmax
 
     im = None
@@ -411,7 +441,8 @@ def plot_regional(comparison, rows, group_breaks, matrices, outpng):
     cax = fig.add_axes([0.945, 0.18, 0.022, 0.70])
     cb = fig.colorbar(im, cax=cax)
     cb.set_label("RMSE improvement (%)", fontsize=12, rotation=90, labelpad=16)
-    cb.set_ticks([-vmax, -10, -5, 0, 5, 10, vmax])
+    cb.set_ticks([-vmax, -20, -10, 0, 10, 20, vmax])
+    print("DEBUG colorbar ticks:", [-vmax, -20, -10, 0, 10, 20, vmax])
     cb.ax.tick_params(labelsize=10)
 
     fig.text(
@@ -544,6 +575,7 @@ def summarize_records(records):
 
 def run_comparison(model_cfg, var_cfg, comparison, outdir):
     rows, group_breaks = build_rows(var_cfg)
+    rows, group_breaks = filter_rows_for_derived_surface(rows, comparison)
     all_records = []
 
     print("")
@@ -595,55 +627,18 @@ def run_comparison(model_cfg, var_cfg, comparison, outdir):
     return all_records
 
 
-def resolve_config_paths(config, system_base):
-    for key in ("data_base", "input_path", "output_path"):
-        value = config.get(key)
-        if value is None:
-            continue
-        path = Path(value).expanduser()
-        if not path.is_absolute():
-            config[key] = str((system_base / path).resolve())
-
-
-def run_performance_plots(config_dir, system_base):
-    plot_configs = [
-        ("performance heatmaps", config_dir / "performance_heatmap.yaml", "performance_heatmap"),
-        ("performance violins", config_dir / "performance_violin.yaml", "performance_violin"),
-    ]
-
-    for label, path, module_name in plot_configs:
-        if not path.exists():
-            continue
-
-        print("")
-        print("=" * 100)
-        print(f"Running {label}: {path}")
-        print("=" * 100)
-
-        module = importlib.import_module(module_name)
-        config = module.load_config(path) if hasattr(module, "load_config") else load_yaml(path)
-        resolve_config_paths(config, system_base)
-        module.main(config)
-
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config-dir", default="../config")
     parser.add_argument("--comparison", default="all")
-    parser.add_argument(
-        "--skip-performance-plots",
-        action="store_true",
-        help="Only run the legacy config-driven scorecard comparisons; skip heatmap and violin configs.",
-    )
     args = parser.parse_args()
 
     config_dir = Path(args.config_dir).resolve()
     system_base = config_dir.parent
-    outdir = system_base / "outputs"
+    outdir = Path(os.environ.get("SCORECARD_SYSTEM_OUTPUT_DIR", system_base / "outputs"))
     outdir.mkdir(parents=True, exist_ok=True)
 
     model_cfg = load_yaml(config_dir / "models.yaml")
-    resolve_config_paths(model_cfg, system_base)
     var_cfg = load_yaml(config_dir / "variables.yaml")
     comp_cfg = load_yaml(config_dir / "comparisons.yaml")
 
@@ -668,9 +663,6 @@ def main():
     print("All requested comparisons complete.")
     print(f"Combined CSV: {all_csv}")
     print("=" * 100)
-
-    if not args.skip_performance_plots:
-        run_performance_plots(config_dir, system_base)
 
 
 if __name__ == "__main__":
